@@ -1,7 +1,7 @@
 # RFP-004 #48: Four finding replays (run 2026-11-26)
 
 - **Issue:** [iftech/qa-audits#48](https://github.com/iftech/qa-audits/issues/48)
-- **QA comment:** Not yet posted at the time of packaging. See [the issue discussion](https://github.com/iftech/qa-audits/issues/48) for the follow-up.
+- **QA comment:** https://github.com/iftech/qa-audits/issues/48#issuecomment-7196517760
 - **Report:** [`2026-11-26-48-combined-audit-report.md`](../../../../../reports/logos/rfp-004-dex/2026-11-26-48-combined-audit-report.md)
 - **Run started:** 2026-11-26 14:18:55 UTC (first recorded test build; Rust tests began at 14:19:09 UTC).
 
