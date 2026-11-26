@@ -1,0 +1,10 @@
+{
+  "definition_token_a_id": "Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM",
+  "definition_token_b_id": "Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb",
+  "liquidity_pool_id": "Public/CCMZhonCog58dHn26gnWcDi1chuuW64vG1cHTm7riXJq",
+  "liquidity_pool_supply": "141421",
+  "reserve_a": "100000",
+  "reserve_b": "200000",
+  "vault_a_id": "Public/DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1",
+  "vault_b_id": "Public/6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG"
+}

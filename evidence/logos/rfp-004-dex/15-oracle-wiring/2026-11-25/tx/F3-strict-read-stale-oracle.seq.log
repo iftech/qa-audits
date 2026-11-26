@@ -1,0 +1,27 @@
+[2026-11-25T20:39:29Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:48846 conn_id=165
+[2026-11-25T20:39:29Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:48848 conn_id=166
+[2026-11-25T20:39:29Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:39:29.503333Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.066958ms
+
+thread '<unnamed>' panicked at /src/programs/stablecoin/src/update_redemption_rate.rs:62:5:
+Market price oracle observation is stale
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-11-25T20:39:29Z INFO  sequencer_core] Validated transaction with hash c83024d31496dd71650dd0e6739abdba00ab13c56d982d89e54ff9f5b1a51e74, including it in block
+[2m2026-11-25T20:39:29.673470Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 46.243787ms
+[2m2026-11-25T20:39:29.741853Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.79778ms
+[2m2026-11-25T20:39:29.809239Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.076007ms
+[2m2026-11-25T20:39:29.876624Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.248725ms
+[2026-11-25T20:39:29Z INFO  sequencer_core] Created block with 3 transactions in 0 seconds
+[2026-11-25T20:39:29Z INFO  sequencer_core] Publishing block 93 on pin d608a73f4de6e70f129ac10cd3348a128f1ceb2f07e43160c5dff6842f0673f4
+[2m2026-11-25T20:39:29.944173Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.337078ms
+
+thread '<unnamed>' panicked at /src/programs/stablecoin/src/update_redemption_rate.rs:62:5:
+Market price oracle observation is stale
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2m2026-11-25T20:39:30.064617Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 45.876464ms
+[2m2026-11-25T20:39:30.131631Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.561197ms
+[2m2026-11-25T20:39:30.198990Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.752262ms
+[2m2026-11-25T20:39:30.265708Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.463542ms
+[2026-11-25T20:39:30Z INFO  sequencer_executor_actor::actor] Block with id 93 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:39:30Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:48850 conn_id=167
+[2026-11-25T20:39:31Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update

@@ -1,0 +1,55 @@
+📋 Instruction: initialize_program
+
+Accounts:
+  📦 deployment_authority → 0x7204e2373a07b88883df22f855232e8e59a4f9bf3f2a8b17f3ff10b0e7774657
+  📦 protocol_parameters → 0x412d3766fe33eb5953ad427a60a02a285df55afa31f9b630d70500a4a2e15259
+  📦 stability_fee_accumulator → 0x5d3b61737639657b31950454721e644330821b9d9683cc571451a8fbfab2d254
+  📦 redemption_price_state → 0x5893699ec6a9af6ed5c298c18be180d46d8f522009d6b6888d814fc54fc18035
+  📦 stablecoin_definition → 0x165c0ff296db696fc1c23bc7af21a4051b172572cf5f0de15e5ca6e5588ee9a8
+  📦 stablecoin_master_holding → 0x198f09770c9548451a9e59e7b784afe2f940c217cd41b26bc1f6a3c84d284a52
+  📦 collateral_definition → 0x6231ce8b8b0bee51278a98dd108b39112f28fb186c550dec42547aff1ad80ac6
+  📦 market_price_oracle → 0xc65ccc794efd78648b645b2ec35fe9f5873c4beb210e2958a05a562039daf838
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  freeze_authority_account_id = "qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz"
+  initial_stability_fee_per_millisecond = 1000000000001500000000000000
+  initial_controller_proportional_gain = 1000000000
+  initial_controller_integral_gain = 0
+  initial_minimum_collateralization_ratio = 1500000000000000000000000000
+  minimum_milliseconds_between_rate_updates = 1000
+  maximum_oracle_price_age_milliseconds = 60000
+  initial_redemption_price = 1000000000000000000000000000
+  stablecoin_name = "QA Stable"
+  initial_admin_account_id = "qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz"
+  minimum_debt_amount = 10
+  debt_ceiling = 1000000000000
+  market_price_oracle_program_id = "6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux"
+
+🔧 Transaction:
+  program:    8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc
+  instruction index: 0
+  instruction: InitializeProgram {
+    freeze_authority_account_id: "qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz",
+    initial_stability_fee_per_millisecond: 1000000000001500000000000000,
+    initial_controller_proportional_gain: 1000000000,
+    initial_controller_integral_gain: 0,
+    initial_minimum_collateralization_ratio: 1500000000000000000000000000,
+    minimum_milliseconds_between_rate_updates: 1000,
+    maximum_oracle_price_age_milliseconds: 60000,
+    initial_redemption_price: 1000000000000000000000000000,
+    stablecoin_name: "QA Stable",
+    initial_admin_account_id: "qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz",
+    minimum_debt_amount: 10,
+    debt_ceiling: 1000000000000,
+    market_price_oracle_program_id: "6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux",
+  }
+
+  Serialized instruction data (238 bytes, borsh):
+    0x000c7c11e4841f4de153433676e22cce166c15c22252bfd5b5289f4375f7a1417500c029df7ad4d59f3c2e3b030000000000ca9a3b000000000000000000000000000000000000000000000000000000000000005c5bc0b8ef5ac5d80400000000e80300000000000060ea000000000000000000e83c80d09f3c2e3b030000000009000000514120537461626c650c7c11e4841f4de153433676e22cce166c15c22252bfd5b5289f4375f7a141750a0000000000000000000000000000000010a5d4e8000000000000000000000050fa96a0afa23d7d15e17610efeaf29c1fbe4b4d63e5ab2020254f48d9052ffd
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 9f489f7404e20eff5dfa9a8d264a8fde592443683e8b0ac62494653a9ad68909
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

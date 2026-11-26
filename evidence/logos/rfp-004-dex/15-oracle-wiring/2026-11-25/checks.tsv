@@ -1,0 +1,27 @@
+CHECK	O1-pool-pda-order-independent	same-pool	same-pool	
+CHECK	S1-init-with-absent-oracle	accepted	accepted	
+CHECK	F1-strict-read-absent-oracle	rejected	rejected	assertion `left != right` failed: Market price oracle account must be initialized
+CHECK	F2-soft-read-absent-oracle	accepted	accepted	
+CHECK	F2b-soft-read-leaves-redemption	unchanged	unchanged	
+CHECK	O2-reversed-pool-rejected	rejected	rejected	account validation failed: AccountAlreadyInitialized { account_index: 1 }
+CHECK	T1-publish-with-1-observation	accepted	accepted	
+CHECK	T1b-publish-1-obs-leaves-oracle	unchanged	unchanged	
+CHECK	S2-strict-read-of-seed-spot-price	accepted	accepted	
+CHECK	A1-swaps-move-current-tick	changed	changed	
+CHECK	A2-swaps-record-observation	changed	unchanged	
+CHECK	A3-swaps-publish-price	changed	unchanged	
+CHECK	T2-record-tick	accepted	accepted	
+CHECK	T2b-record-tick-adds-observation	changed	changed	
+CHECK	T3-publish-twap	accepted	accepted	
+CHECK	T3b-publish-updates-oracle	changed	changed	
+CHECK	S3-strict-read-of-published-twap	accepted	accepted	
+CHECK	T4-publish-after-stale-tail	rejected	rejected	PublishPrice: observations are stale; call RecordTick before publishing
+CHECK	F3-strict-read-stale-oracle	rejected	rejected	Market price oracle observation is stale
+CHECK	F4-soft-read-stale-oracle	accepted	accepted	
+CHECK	F4b-soft-stale-leaves-redemption	unchanged	unchanged	
+CHECK	T5-record-then-publish-recovers	accepted	accepted	
+CHECK	Z1-publish-zero-twap	rejected	accepted	
+CHECK	Z1b-published-price	nonzero	0	
+CHECK	P1-bind-wrong-pair	rejected	rejected	assertion `left == right` failed: New oracle base_asset must equal the stablecoin definition's account_id
+CHECK	P2-bind-wallet-sourced-oracle	rejected	accepted	
+CHECK	P3-strict-read-wallet-sourced-price	rejected	accepted	

@@ -1,0 +1,38 @@
+[2026-11-25T20:39:39Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:52020 conn_id=176
+[2m2026-11-25T20:39:39.642853Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.436353ms
+[2026-11-25T20:39:39Z INFO  sequencer_core] Created block with 2 transactions in 0 seconds
+[2026-11-25T20:39:39Z INFO  sequencer_core] Publishing block 98 on pin f9d554ae7d77b63596aabf39602ce7ce018c4b278cb159442b890261ce96583a
+[2m2026-11-25T20:39:39.673347Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.95125ms
+[2m2026-11-25T20:39:39.740550Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.745695ms
+[2m2026-11-25T20:39:39.806699Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.383676ms
+[2026-11-25T20:39:39Z INFO  sequencer_executor_actor::actor] Block with id 98 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:39:39Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:52034 conn_id=177
+[2026-11-25T20:39:41Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:39:41.545055Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.017555ms
+[2m2026-11-25T20:39:41.682789Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 61.277987ms
+[2m2026-11-25T20:39:41.714781Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.380858ms
+[2m2026-11-25T20:39:41.783640Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.503743ms
+[2026-11-25T20:39:41Z INFO  sequencer_core] Validated transaction with hash e4980deee0c40d7fa10585dba02ffa90f0140271bd04b22ead94a0f868dc96a5, including it in block
+[2m2026-11-25T20:39:41.855608Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 45.999995ms
+[2m2026-11-25T20:39:41.926582Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.933556ms
+[2m2026-11-25T20:39:41.994642Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.666713ms
+[2m2026-11-25T20:39:42.062530Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.740398ms
+[2026-11-25T20:39:42Z INFO  sequencer_core] Created block with 3 transactions in 0 seconds
+[2026-11-25T20:39:42Z INFO  sequencer_core] Publishing block 99 on pin ef3af833afb656d713ed9102186bc7ea33951a9898811ec0c0aa9d43129c21d9
+[2m2026-11-25T20:39:42.132192Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.901226ms
+[2m2026-11-25T20:39:42.268745Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 61.238755ms
+[2m2026-11-25T20:39:42.297790Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.226685ms
+[2m2026-11-25T20:39:42.364525Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.711845ms
+[2m2026-11-25T20:39:42.442624Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 46.154916ms
+[2m2026-11-25T20:39:42.510457Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.713661ms
+[2m2026-11-25T20:39:42.577753Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.924711ms
+[2m2026-11-25T20:39:42.645117Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.889927ms
+[2026-11-25T20:39:42Z INFO  sequencer_executor_actor::actor] Block with id 99 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:39:42Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:52046 conn_id=178
+[2026-11-25T20:39:43Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:39:43.504511Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 5.105065ms
+[2m2026-11-25T20:39:43.572570Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.601211ms
+[2m2026-11-25T20:39:43.640566Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.891587ms
+[2026-11-25T20:39:43Z INFO  sequencer_core] Created block with 2 transactions in 0 seconds
+[2026-11-25T20:39:43Z INFO  sequencer_core] Publishing block 100 on pin 3a98def1253bcd991664a5519f460d1050bac28d5577f1250876d4c9d5533a5f
+[2m2026-11-25T20:39:43.672623Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 5.584499ms

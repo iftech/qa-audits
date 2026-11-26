@@ -1,0 +1,25 @@
+📋 Instruction: update_redemption_rate
+
+Accounts:
+  📦 caller → 0x0c7c11e4841f4de153433676e22cce166c15c22252bfd5b5289f4375f7a14175
+  📦 protocol_parameters → 0x412d3766fe33eb5953ad427a60a02a285df55afa31f9b630d70500a4a2e15259
+  📦 redemption_price_state → 0x5893699ec6a9af6ed5c298c18be180d46d8f522009d6b6888d814fc54fc18035
+  📦 market_price_oracle → 0x0ec735aaec485168b0ee1b72cd5a083bed31d67c46bfbea7934b2e8bc97a43f6
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+
+🔧 Transaction:
+  program:    8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc
+  instruction index: 2
+  instruction: UpdateRedemptionRate {
+  }
+
+  Serialized instruction data (1 bytes, borsh):
+    0x02
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 8154c792654443db02dfac4bec157ce46768813f692614c329268b60d23a9de7
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

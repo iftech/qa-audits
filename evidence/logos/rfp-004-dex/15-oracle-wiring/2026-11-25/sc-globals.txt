@@ -1,0 +1,5 @@
+protocol_parameters        5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4
+stability_fee_accumulator  7GwS5nHdFf7F9Vxwif7o5xyxRjU7QFMJPZ8XcTyZg9md
+redemption_price_state     6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL
+stablecoin_definition      2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM
+stablecoin_master_holding  2imhKD5th7Zro1DWRqbWjr881RA9YukCrbyX4ZLaLYCH

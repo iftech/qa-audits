@@ -1,0 +1,30 @@
+[2026-11-25T20:40:15Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:57322 conn_id=210
+[2026-11-25T20:40:15Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:57332 conn_id=211
+[2026-11-25T20:40:17Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:40:17.543880Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.902221ms
+
+thread '<unnamed>' panicked at /src/programs/stablecoin/src/admin.rs:346:17:
+assertion `left == right` failed: New oracle base_asset must equal the stablecoin definition's account_id
+  left: 6c8cKKnsJnpDgGucWfbHV5PE2nnQnEbL8M4Ho6mBLj7
+ right: 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-11-25T20:40:17Z INFO  sequencer_core] Validated transaction with hash 8d2c29474704d8a2fdca438ccac0474ea5adb911d02bee2b740b3b1644398631, including it in block
+[2m2026-11-25T20:40:17.666865Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 45.981598ms
+[2m2026-11-25T20:40:17.734884Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.339952ms
+[2m2026-11-25T20:40:17.803080Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.964475ms
+[2m2026-11-25T20:40:17.871273Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.059001ms
+[2026-11-25T20:40:17Z INFO  sequencer_core] Created block with 3 transactions in 0 seconds
+[2026-11-25T20:40:17Z INFO  sequencer_core] Publishing block 117 on pin b420c8e3a34106b03312d4522e4f3ff9beed96ced12cecb8f9ff98b3e7ac29d4
+[2m2026-11-25T20:40:17.941164Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.82639ms
+
+thread '<unnamed>' panicked at /src/programs/stablecoin/src/admin.rs:346:17:
+assertion `left == right` failed: New oracle base_asset must equal the stablecoin definition's account_id
+  left: 6c8cKKnsJnpDgGucWfbHV5PE2nnQnEbL8M4Ho6mBLj7
+ right: 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2m2026-11-25T20:40:18.063563Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 46.636591ms
+[2m2026-11-25T20:40:18.131489Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.878433ms
+[2m2026-11-25T20:40:18.200532Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.156244ms
+[2m2026-11-25T20:40:18.268599Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.003369ms
+[2026-11-25T20:40:18Z INFO  sequencer_executor_actor::actor] Block with id 117 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:40:18Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:57340 conn_id=212

@@ -1,0 +1,3 @@
+current_tick_account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg
+price_observations   8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5
+oracle_price_account EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf

@@ -1,0 +1,37 @@
+📋 Instruction: new_definition
+
+Accounts:
+  📦 config → 0xbc41d854765ba7d129327b496efefaf9fb14b3ce07567694c1bae74010ae32fb
+  📦 pool → 0x50aead089141ec4dc3ed57c0ff8926fc1cb8edd2864d0e43d2ef44e2b110888a
+  📦 vault_a → 0x0166bc6af337cea93adaf55a0bfaded44058fa4157dc9a6c1ae5e1c5cc690607
+  📦 vault_b → 0xbdf7313ca5eac9760b52b02207185e6e8e8f73206aebb0542989ebf05ea769d8
+  📦 pool_definition_lp → 0xa659325bdb2a695fc7a63af9b807590dc8f31e30e074665533b6588d3674ea7a
+  📦 lp_lock_holding → 0x3cf3b9c6862b76506015809d7fed86be22c53129d5a15bcdf2e8bf5418868573
+  📦 user_holding_a → 0x7f85c69354b56e95ac3460e70034e9a89bab9603cda7b5434b52835bd402417f
+  📦 user_holding_b → 0x9acf93a5911aa60d0449e15e0fad54ae282e4972369fa40ac8c8de177645e9ee
+  📦 user_holding_lp → 0x919317d10058368d61a9783330fcd6e7eb00c231c138434c821701045656840e
+  📦 current_tick_account → 0xeb2e84df601d023947863ab652b1ddf9fd408ad7f834f1c50fb46487865b22c7
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  token_a_amount = 200000
+  token_b_amount = 100000
+  deadline = 18446744073709551615
+
+🔧 Transaction:
+  program:    FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe
+  instruction index: 4
+  instruction: NewDefinition {
+    token_a_amount: 200000,
+    token_b_amount: 100000,
+    deadline: 18446744073709551615,
+  }
+
+  Serialized instruction data (41 bytes, borsh):
+    0x04400d0300000000000000000000000000a0860100000000000000000000000000ffffffffffffffff
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: a2caf017d17845c174fb753de95badbacc9135a0c19e4f7662a6ab3d9d4227c1
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

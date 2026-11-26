@@ -1,0 +1,460 @@
+Run directory: /home/ubuntu/rfp004-smoke.XeCt6O
+RISC0_DEV_MODE=1; RISC0_SERVER_PATH=/home/ubuntu/.cargo/bin/r0vm
+$ rustc +1.94.0 --version
+rustc 1.94.0 (4a4ef493e 2026-03-02)
+$ cargo +1.94.0 --version
+cargo 1.94.0 (85eff7c80 2026-01-15)
+$ cargo +1.94.0 risczero --version
+cargo-risczero 3.0.5
+$ /home/ubuntu/.cargo/bin/r0vm --version
+risc0-r0vm 3.0.5
+$ /home/ubuntu/repos/logos-execution-zone/target/release/sequencer_service --version
+sequencer_service 0.1.0
+$ /home/ubuntu/repos/logos-execution-zone/target/release/wallet --version
+wallet 0.1.0
+SPEL CLI package 0.7.0 @ c6f73ce21e4805f8430f03afdbdedf0b7e479a5e
+$ env RUST_LOG=info\,kameo=warn RISC0_DEV_MODE=1 /home/ubuntu/repos/logos-execution-zone/target/release/sequencer_service /home/ubuntu/rfp004-smoke.XeCt6O/sequencer.json --home /home/ubuntu/rfp004-smoke.XeCt6O/chain --listen-address 127.0.0.1 --port 3040
+$ rpc checkHealth
+{"jsonrpc":"2.0","id":1,"result":null}
+$ rpc getChannelId
+{"jsonrpc":"2.0","id":1,"result":"0101010101010101010101010101010101010101010101010101010101010101"}
+$ sha256sum /home/ubuntu/rfp004-smoke.XeCt6O/sequencer.json /home/ubuntu/rfp004-smoke.XeCt6O/wallet/wallet_config.json
+bdb194f26da5f246f6ed688ce97007e66ef51415a8bba199ed83ea58c8376038  /home/ubuntu/rfp004-smoke.XeCt6O/sequencer.json
+d14894841021677b8b3785c85249167b27f0ea60092e0b696d42a0b3d1d569b0  /home/ubuntu/rfp004-smoke.XeCt6O/wallet/wallet_config.json
+$ /home/ubuntu/repos/logos-execution-zone/target/release/wallet account new public --label namespace-owner
+$ /home/ubuntu/repos/logos-execution-zone/target/release/wallet account new public --label definition-a
+Generated new account with account_id Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn at path /1
+With pk ffe30f7cf9c4f944f457a2be4b8824254b23fab21b6e917a9545c4dc0046fdaa
+Stored persistent accounts at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/storage.json
+Stored statistics at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/statistics.json
+$ /home/ubuntu/repos/logos-execution-zone/target/release/wallet account new public --label definition-b
+Generated new account with account_id Public/BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis at path /0/0
+With pk 91c6824f5c849f0f7acf57f72ffaf68402d14b6b2405cf58fd1209472130af88
+Stored persistent accounts at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/storage.json
+Stored statistics at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/statistics.json
+$ /home/ubuntu/repos/logos-execution-zone/target/release/wallet account new public --label holding-a
+Generated new account with account_id Public/BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW at path /2
+With pk bbd617b8276e951347bb2b43d36e6e899d6ad057e7ece3ff229b00b97c1a935a
+Stored persistent accounts at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/storage.json
+Stored statistics at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/statistics.json
+$ /home/ubuntu/repos/logos-execution-zone/target/release/wallet account new public --label holding-b
+Generated new account with account_id Public/FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt at path /1/0
+With pk 70af905edc252f7df84d938c6b011c372a727bb4ed20bdd45b891135d53f5fcf
+Stored persistent accounts at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/storage.json
+Stored statistics at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/statistics.json
+$ /home/ubuntu/repos/logos-execution-zone/target/release/wallet account new public --label holding-lp
+Generated new account with account_id Public/F2wqBAzFFqpSxXWaP36YQNKhFNzD172a13BoXqXWvPau at path /0/1
+With pk 8cfd184bca756b90e165a8d991a1f5306602d5455113eb1401569da1658b6848
+Stored persistent accounts at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/storage.json
+Stored statistics at /home/ubuntu/rfp004-smoke.XeCt6O/wallet/statistics.json
+Namespace owner: EVtgbwys1r7im6jLLHuj67krBqX2u61t7f5ndR4ctsqN
+Definition A: Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn
+Definition B: BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis
+Trader A: BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW
+Trader B: FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt
+Trader LP: F2wqBAzFFqpSxXWaP36YQNKhFNzD172a13BoXqXWvPau
+Imported pinned SPEL debug-genesis fee payer: 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV
+$ rpc getAccountBalance \[\"6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV\"\]
+{"jsonrpc":"2.0","id":1,"result":10000000000000}
+$ /home/ubuntu/repos/spel/target/release/spel program-id target/guest/token.bin --format hex
+token ImageID: 057e9cc28c7bd70645f74fa2c38e9880e532d369bda31a4bbaa24f5f1e93a6bc
+94e3e3024398b623f998b5a2b6c546949655b4717e3099dfb0fdbc321f1640ee  target/guest/token.bin
+$ /home/ubuntu/repos/spel/target/release/spel deploy target/guest/token.bin --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV --immutable
+📦 Deploying target/guest/token.bin (268404 bytes, 3 segments), fee payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV
+   header account: 68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc
+✅ Program deployed. Address it with --program 68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc,
+token program header: 68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc
+$ rpc getAccount \[\"68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc\"\]
+On-chain immutable header ImageID: 057e9cc28c7bd70645f74fa2c38e9880e532d369bda31a4bbaa24f5f1e93a6bc
+$ /home/ubuntu/repos/spel/target/release/spel program-id target/guest/twap_oracle.bin --format hex
+twap_oracle ImageID: 979279c5fa38173abf0d35370e2c481303ec28f959c7eeb98ab74a7e90ce3edd
+0bfeb8ec82a7d7c5eb4265e349efd1448029326d76946e0c3a817444c3d989b9  target/guest/twap_oracle.bin
+$ /home/ubuntu/repos/spel/target/release/spel deploy target/guest/twap_oracle.bin --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV --immutable
+📦 Deploying target/guest/twap_oracle.bin (333800 bytes, 4 segments), fee payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV
+   header account: 65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP
+✅ Program deployed. Address it with --program 65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP,
+twap_oracle program header: 65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP
+$ rpc getAccount \[\"65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP\"\]
+On-chain immutable header ImageID: 979279c5fa38173abf0d35370e2c481303ec28f959c7eeb98ab74a7e90ce3edd
+$ /home/ubuntu/repos/spel/target/release/spel program-id target/guest/amm.bin --format hex
+amm ImageID: a69de4104f829dadb356f05f46ea1d79fc819618f2ebedb341d5b2e041d8bd79
+0d0b0492ab72f7d4e8b7e108d5835f038a65897d3e69ea29cc063aab59648025  target/guest/amm.bin
+$ /home/ubuntu/repos/spel/target/release/spel deploy target/guest/amm.bin --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV --immutable
+📦 Deploying target/guest/amm.bin (445604 bytes, 5 segments), fee payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV
+   header account: 4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb
+✅ Program deployed. Address it with --program 4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb,
+amm program header: 4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb
+$ rpc getAccount \[\"4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb\"\]
+On-chain immutable header ImageID: a69de4104f829dadb356f05f46ea1d79fc819618f2ebedb341d5b2e041d8bd79
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json --program 68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-fungible-definition --name QA\ Token\ A --total-supply 1000000 --mint-authority none --definition-target-account Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn --holding-target-account BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW
+📋 Instruction: new_fungible_definition
+
+Accounts:
+  📦 definition_target_account → 0xcf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a711
+  📦 holding_target_account → 0x02af103b261296f0d7d39fa3ba151a57755fe968b8ba9299d2e611ed7db99ff7
+
+Arguments (parsed):
+  name = "QA Token A"
+  total_supply = 1000000
+  mint_authority = None
+
+🔧 Transaction:
+  program:    68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc
+  instruction index: 1
+  instruction: NewFungibleDefinition {
+    name: "QA Token A",
+    total_supply: 1000000,
+    mint_authority: None,
+  }
+
+  Serialized instruction data (32 bytes, borsh):
+    0x010a000000514120546f6b656e204140420f0000000000000000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: ba9602b1d1d1ca9982c620817e15b9cfe5eccf3ac9a63a48c49d68b7408ff795
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.
+$ rpc getTransaction \[\"ba9602b1d1d1ca9982c620817e15b9cfe5eccf3ac9a63a48c49d68b7408ff795\"\]
+Sequencer getTransaction: public transaction in block 17
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json --program 68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-fungible-definition --name QA\ Token\ B --total-supply 1000000 --mint-authority none --definition-target-account BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis --holding-target-account FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt
+📋 Instruction: new_fungible_definition
+
+Accounts:
+  📦 definition_target_account → 0x973cc10a543a465de5ccf18dfe00c71149835063986ba88cf78753ffbf5ce9cc
+  📦 holding_target_account → 0xdbdf2d246dec94e2c32e871f4dd66ce75e8ea73515f1f225ad1b379bbec76edd
+
+Arguments (parsed):
+  name = "QA Token B"
+  total_supply = 1000000
+  mint_authority = None
+
+🔧 Transaction:
+  program:    68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc
+  instruction index: 1
+  instruction: NewFungibleDefinition {
+    name: "QA Token B",
+    total_supply: 1000000,
+    mint_authority: None,
+  }
+
+  Serialized instruction data (32 bytes, borsh):
+    0x010a000000514120546f6b656e204240420f0000000000000000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 5eb538c57e73056c672d8130b253ef2181c323ba49dd93db75c9662b12a26ac2
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.
+$ rpc getTransaction \[\"5eb538c57e73056c672d8130b253ef2181c323ba49dd93db75c9662b12a26ac2\"\]
+Sequencer getTransaction: public transaction in block 18
+$ /home/ubuntu/repos/lez-programs/target/debug/examples/amm_pdas 4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb EVtgbwys1r7im6jLLHuj67krBqX2u61t7f5ndR4ctsqN 65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis
+config               CbgqnEu7vZVDj1arrPAdnHpLqB151FTzCpvLiKXv9FyN
+pool                 91UwKeZehUjkPzS7dLAfRmadNfLiXfMXaeNPEe4XC8p8
+vault_a              7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj
+vault_b              J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj
+pool_definition_lp   ACu4uy7WrLS8fQaGsEETT9CBofAmV9YiU5AJZcQuVHoB
+lp_lock_holding      7cgEJm31N3jkS2LyoH9tTpRu4UBTEcfZqbyQ5bNHrhS1
+current_tick_account 7j38W7PDg32LhX9Tt73TYw8os8P61AapJ5EB1Ys1dr1t
+protocol_fee_a       3vvW9CTckmWAt2S5ArYRJuqTYViarbMFfFxPagirYnbb
+protocol_fee_b       FzpmBQD1MJHfp4KQLV9nGsC1dSEG9554qu2kxyfZyWH9
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/amm-idl.json --program 4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- initialize --owner EVtgbwys1r7im6jLLHuj67krBqX2u61t7f5ndR4ctsqN --config CbgqnEu7vZVDj1arrPAdnHpLqB151FTzCpvLiKXv9FyN --nonce 0000000000000000000000000000000000000000000000000000000000000000 --token-program-id 68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc --twap-oracle-program-id 65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP --authority EVtgbwys1r7im6jLLHuj67krBqX2u61t7f5ndR4ctsqN --swap-fee-bps 30 --protocol-fee-bps 2500
+📋 Instruction: initialize
+
+Accounts:
+  📦 owner → 0xc88ea170d431896ad4a60f729c2b457a5956884928a51d8775985386e72f3905
+  📦 config → 0xac535a2333355be9701eb51ed5465a593a8b8d70621e114796bd3f1fab840b0d
+
+Arguments (parsed):
+  nonce = 0x0000000000000000000000000000000000000000000000000000000000000000
+  token_program_id = "68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc"
+  twap_oracle_program_id = "65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP"
+  authority = "EVtgbwys1r7im6jLLHuj67krBqX2u61t7f5ndR4ctsqN"
+  swap_fee_bps = 30
+  protocol_fee_bps = 2500
+
+🔧 Transaction:
+  program:    4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb
+  instruction index: 0
+  instruction: Initialize {
+    nonce: 0x0000000000000000000000000000000000000000000000000000000000000000,
+    token_program_id: "68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc",
+    twap_oracle_program_id: "65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP",
+    authority: "EVtgbwys1r7im6jLLHuj67krBqX2u61t7f5ndR4ctsqN",
+    swap_fee_bps: 30,
+    protocol_fee_bps: 2500,
+  }
+
+  Serialized instruction data (161 bytes, borsh):
+    0x0000000000000000000000000000000000000000000000000000000000000000004c4678dc501acce83655b57c22c4b04604a684c82f29bcf8e07c8b989f91d1034b88d88ef11225c24fbf49a9b58587d30c88ed7b686d5e311f8c5cb003e0eb96c88ea170d431896ad4a60f729c2b457a5956884928a51d8775985386e72f39051e000000000000000000000000000000c4090000000000000000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: ca2b3eb2ba7a6c5764e4215b226fdf54fd80db56481102201514d418a2a8fc0e
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.
+$ rpc getTransaction \[\"ca2b3eb2ba7a6c5764e4215b226fdf54fd80db56481102201514d418a2a8fc0e\"\]
+Sequencer getTransaction: public transaction in block 19
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/amm-idl.json inspect CbgqnEu7vZVDj1arrPAdnHpLqB151FTzCpvLiKXv9FyN --type AmmConfig
+Account: CbgqnEu7vZVDj1arrPAdnHpLqB151FTzCpvLiKXv9FyN
+Data:    128 bytes
+Hex:     4c4678dc501acce83655b57c22c4b04604a684c82f29bcf8e07c8b989f91d1034b88d88ef11225c24fbf49a9b58587d30c88ed7b686d5e311f8c5cb003e0eb96c88ea170d431896ad4a60f729c2b457a5956884928a51d8775985386e72f39051e000000000000000000000000000000c4090000000000000000000000000000
+
+{
+  "authority": "Public/EVtgbwys1r7im6jLLHuj67krBqX2u61t7f5ndR4ctsqN",
+  "protocol_fee_bps": "2500",
+  "swap_fee_bps": "30",
+  "token_program_id": "Public/68kK2wkV9VuazkQQn1rvnVoqxbRK3DyNCpuw59pRYEsc",
+  "twap_oracle_program_id": "Public/65rc4mLQRToVwPkfST1AbHpyPPsKQdMPAoHvqVms5tKP"
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/amm-idl.json --program 4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-definition --config CbgqnEu7vZVDj1arrPAdnHpLqB151FTzCpvLiKXv9FyN --pool 91UwKeZehUjkPzS7dLAfRmadNfLiXfMXaeNPEe4XC8p8 --vault-a 7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj --vault-b J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj --pool-definition-lp ACu4uy7WrLS8fQaGsEETT9CBofAmV9YiU5AJZcQuVHoB --lp-lock-holding 7cgEJm31N3jkS2LyoH9tTpRu4UBTEcfZqbyQ5bNHrhS1 --user-holding-a BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW --user-holding-b FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt --user-holding-lp F2wqBAzFFqpSxXWaP36YQNKhFNzD172a13BoXqXWvPau --current-tick-account 7j38W7PDg32LhX9Tt73TYw8os8P61AapJ5EB1Ys1dr1t --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --token-a-amount 100000 --token-b-amount 200000 --deadline 18446744073709551615
+📋 Instruction: new_definition
+
+Accounts:
+  📦 config → 0xac535a2333355be9701eb51ed5465a593a8b8d70621e114796bd3f1fab840b0d
+  📦 pool → 0x76fd1559b40c3638f30cc89565c270b344bac30abc497c6fd447adc66295d2e1
+  📦 vault_a → 0x60e0312ca9ff7cc81b30c876bb6538e4f160868d8749dd0d4a2d4f0c894dba6c
+  📦 vault_b → 0xfcdad3d3cf1daaf9ed58ab9fba620b4c03c1a88c439ee1d85defef38a4bc3206
+  📦 pool_definition_lp → 0x88c571b15ad24cb5580a91b2937849d4cfdd13a41a06fccb7ac6eb722bc86f76
+  📦 lp_lock_holding → 0x6249ce8524922763cc2eeab8c9eb46d287bfd203c931a54c10f995242a455992
+  📦 user_holding_a → 0x02af103b261296f0d7d39fa3ba151a57755fe968b8ba9299d2e611ed7db99ff7
+  📦 user_holding_b → 0xdbdf2d246dec94e2c32e871f4dd66ce75e8ea73515f1f225ad1b379bbec76edd
+  📦 user_holding_lp → 0xd08331e80276336c2dd4ff6b7eed3d589fedf93e5509546ff71d4b372fb9279e
+  📦 current_tick_account → 0x63eaec56844380a3be2808022270be12a1272b9b7b963243924885a3e75c50b7
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  token_a_amount = 100000
+  token_b_amount = 200000
+  deadline = 18446744073709551615
+
+🔧 Transaction:
+  program:    4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb
+  instruction index: 4
+  instruction: NewDefinition {
+    token_a_amount: 100000,
+    token_b_amount: 200000,
+    deadline: 18446744073709551615,
+  }
+
+  Serialized instruction data (41 bytes, borsh):
+    0x04a0860100000000000000000000000000400d0300000000000000000000000000ffffffffffffffff
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: b57c91c42a7840b34361565a344cf50130bc32500c4a4b16e32c5fa9f51cf895
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.
+$ rpc getTransaction \[\"b57c91c42a7840b34361565a344cf50130bc32500c4a4b16e32c5fa9f51cf895\"\]
+Sequencer getTransaction: public transaction in block 20
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/amm-idl.json inspect 91UwKeZehUjkPzS7dLAfRmadNfLiXfMXaeNPEe4XC8p8 --type PoolDefinition
+Account: 91UwKeZehUjkPzS7dLAfRmadNfLiXfMXaeNPEe4XC8p8
+Data:    208 bytes
+Hex:     cf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a711973cc10a543a465de5ccf18dfe00c71149835063986ba88cf78753ffbf5ce9cc60e0312ca9ff7cc81b30c876bb6538e4f160868d8749dd0d4a2d4f0c894dba6cfcdad3d3cf1daaf9ed58ab9fba620b4c03c1a88c439ee1d85defef38a4bc320688c571b15ad24cb5580a91b2937849d4cfdd13a41a06fccb7ac6eb722bc86f766d280200000000000000000000000000a0860100000000000000000000000000400d0300000000000000000000000000
+
+{
+  "definition_token_a_id": "Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn",
+  "definition_token_b_id": "Public/BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis",
+  "liquidity_pool_id": "Public/ACu4uy7WrLS8fQaGsEETT9CBofAmV9YiU5AJZcQuVHoB",
+  "liquidity_pool_supply": "141421",
+  "reserve_a": "100000",
+  "reserve_b": "200000",
+  "vault_a_id": "Public/7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj",
+  "vault_b_id": "Public/J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj"
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect 7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj --type TokenHolding
+Account: 7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj
+Data:    49 bytes
+Hex:     00cf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a711a0860100000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "100000",
+    "definition_id": "Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj --type TokenHolding
+Account: J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj
+Data:    49 bytes
+Hex:     00973cc10a543a465de5ccf18dfe00c71149835063986ba88cf78753ffbf5ce9cc400d0300000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "200000",
+    "definition_id": "Public/BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW --type TokenHolding
+Account: BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW
+Data:    49 bytes
+Hex:     00cf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a711a0bb0d00000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "900000",
+    "definition_id": "Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt --type TokenHolding
+Account: FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt
+Data:    49 bytes
+Hex:     00973cc10a543a465de5ccf18dfe00c71149835063986ba88cf78753ffbf5ce9cc00350c00000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "800000",
+    "definition_id": "Public/BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json inspect 7j38W7PDg32LhX9Tt73TYw8os8P61AapJ5EB1Ys1dr1t --type CurrentTickAccount
+Account: 7j38W7PDg32LhX9Tt73TYw8os8P61AapJ5EB1Ys1dr1t
+Data:    12 bytes
+Hex:     131b0000c529e10fa2010000
+
+{
+  "last_updated": "1795562744261",
+  "tick": 6931
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect 7cgEJm31N3jkS2LyoH9tTpRu4UBTEcfZqbyQ5bNHrhS1 --type TokenHolding
+Account: 7cgEJm31N3jkS2LyoH9tTpRu4UBTEcfZqbyQ5bNHrhS1
+Data:    49 bytes
+Hex:     0088c571b15ad24cb5580a91b2937849d4cfdd13a41a06fccb7ac6eb722bc86f76e8030000000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "1000",
+    "definition_id": "Public/ACu4uy7WrLS8fQaGsEETT9CBofAmV9YiU5AJZcQuVHoB"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect F2wqBAzFFqpSxXWaP36YQNKhFNzD172a13BoXqXWvPau --type TokenHolding
+Account: F2wqBAzFFqpSxXWaP36YQNKhFNzD172a13BoXqXWvPau
+Data:    49 bytes
+Hex:     0088c571b15ad24cb5580a91b2937849d4cfdd13a41a06fccb7ac6eb722bc86f7685240200000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "140421",
+    "definition_id": "Public/ACu4uy7WrLS8fQaGsEETT9CBofAmV9YiU5AJZcQuVHoB"
+  }
+}
+$ rpc getAccount \[\"3vvW9CTckmWAt2S5ArYRJuqTYViarbMFfFxPagirYnbb\"\]
+{"jsonrpc":"2.0","id":1,"result":{"program_owner":"11111111111111111111111111111111","balance":0,"data":[],"nonce":0}}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/amm-idl.json --program 4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- swap-exact-input --config CbgqnEu7vZVDj1arrPAdnHpLqB151FTzCpvLiKXv9FyN --pool 91UwKeZehUjkPzS7dLAfRmadNfLiXfMXaeNPEe4XC8p8 --vault-a 7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj --vault-b J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj --user-input-holding BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW --user-output-holding FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt --current-tick-account 7j38W7PDg32LhX9Tt73TYw8os8P61AapJ5EB1Ys1dr1t --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --protocol-fee-holding 3vvW9CTckmWAt2S5ArYRJuqTYViarbMFfFxPagirYnbb --swap-amount-in 10000 --min-amount-out 18000 --deadline 18446744073709551615
+📋 Instruction: swap_exact_input
+
+Accounts:
+  📦 config → 0xac535a2333355be9701eb51ed5465a593a8b8d70621e114796bd3f1fab840b0d
+  📦 pool → 0x76fd1559b40c3638f30cc89565c270b344bac30abc497c6fd447adc66295d2e1
+  📦 vault_a → 0x60e0312ca9ff7cc81b30c876bb6538e4f160868d8749dd0d4a2d4f0c894dba6c
+  📦 vault_b → 0xfcdad3d3cf1daaf9ed58ab9fba620b4c03c1a88c439ee1d85defef38a4bc3206
+  📦 user_input_holding → 0x02af103b261296f0d7d39fa3ba151a57755fe968b8ba9299d2e611ed7db99ff7
+  📦 user_output_holding → 0xdbdf2d246dec94e2c32e871f4dd66ce75e8ea73515f1f225ad1b379bbec76edd
+  📦 current_tick_account → 0x63eaec56844380a3be2808022270be12a1272b9b7b963243924885a3e75c50b7
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+  📦 protocol_fee_holding → 0x2b87a6f21d9ce86dc672533541b19ad04afac09fb9256dc1a2c7f6dd08957af2
+
+Arguments (parsed):
+  swap_amount_in = 10000
+  min_amount_out = 18000
+  deadline = 18446744073709551615
+
+🔧 Transaction:
+  program:    4Z7STTNHqwgvqgJiwUuekdmS6DaQCFNEZcJ5dj2GaCzb
+  instruction index: 7
+  instruction: SwapExactInput {
+    swap_amount_in: 10000,
+    min_amount_out: 18000,
+    deadline: 18446744073709551615,
+  }
+
+  Serialized instruction data (41 bytes, borsh):
+    0x071027000000000000000000000000000050460000000000000000000000000000ffffffffffffffff
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 1826435c23bfa3353d8c8c7cfeb18693a673e710146ec92953a060bde02e88e8
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.
+$ rpc getTransaction \[\"1826435c23bfa3353d8c8c7cfeb18693a673e710146ec92953a060bde02e88e8\"\]
+Sequencer getTransaction: public transaction in block 21
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/amm-idl.json inspect 91UwKeZehUjkPzS7dLAfRmadNfLiXfMXaeNPEe4XC8p8 --type PoolDefinition
+Account: 91UwKeZehUjkPzS7dLAfRmadNfLiXfMXaeNPEe4XC8p8
+Data:    208 bytes
+Hex:     cf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a711973cc10a543a465de5ccf18dfe00c71149835063986ba88cf78753ffbf5ce9cc60e0312ca9ff7cc81b30c876bb6538e4f160868d8749dd0d4a2d4f0c894dba6cfcdad3d3cf1daaf9ed58ab9fba620b4c03c1a88c439ee1d85defef38a4bc320688c571b15ad24cb5580a91b2937849d4cfdd13a41a06fccb7ac6eb722bc86f766d280200000000000000000000000000a9ad01000000000000000000000000006cc60200000000000000000000000000
+
+{
+  "definition_token_a_id": "Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn",
+  "definition_token_b_id": "Public/BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis",
+  "liquidity_pool_id": "Public/ACu4uy7WrLS8fQaGsEETT9CBofAmV9YiU5AJZcQuVHoB",
+  "liquidity_pool_supply": "141421",
+  "reserve_a": "109993",
+  "reserve_b": "181868",
+  "vault_a_id": "Public/7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj",
+  "vault_b_id": "Public/J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj"
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect 7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj --type TokenHolding
+Account: 7XAR76LCys1uH8bXP3qkGk6yfqMEKqfL7ZsA4XXWXPzj
+Data:    49 bytes
+Hex:     00cf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a711a9ad0100000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "109993",
+    "definition_id": "Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj --type TokenHolding
+Account: J23GmpFozCCGjvEthnw8cs5R6xGYLbzDtSaC2Cpxeubj
+Data:    49 bytes
+Hex:     00973cc10a543a465de5ccf18dfe00c71149835063986ba88cf78753ffbf5ce9cc6cc60200000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "181868",
+    "definition_id": "Public/BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW --type TokenHolding
+Account: BUeFtQFgsAGiLVh3B3oYYKA7sBWm6hkPwot6ix9vVvW
+Data:    49 bytes
+Hex:     00cf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a71190940d00000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "890000",
+    "definition_id": "Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt --type TokenHolding
+Account: FoHfX1dsLqcfPpgciKpEA1bndYXJP4h2GYRQFR6U48Gt
+Data:    49 bytes
+Hex:     00973cc10a543a465de5ccf18dfe00c71149835063986ba88cf78753ffbf5ce9ccd47b0c00000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "818132",
+    "definition_id": "Public/BBNJ2YrwuHSFNnDWdt4GfsW2PvQgb2RP34aNb35iksis"
+  }
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json inspect 7j38W7PDg32LhX9Tt73TYw8os8P61AapJ5EB1Ys1dr1t --type CurrentTickAccount
+Account: 7j38W7PDg32LhX9Tt73TYw8os8P61AapJ5EB1Ys1dr1t
+Data:    12 bytes
+Hex:     a41300009531e10fa2010000
+
+{
+  "last_updated": "1795562746261",
+  "tick": 5028
+}
+$ /home/ubuntu/repos/spel/target/release/spel --idl artifacts/token-idl.json inspect 3vvW9CTckmWAt2S5ArYRJuqTYViarbMFfFxPagirYnbb --type TokenHolding
+Account: 3vvW9CTckmWAt2S5ArYRJuqTYViarbMFfFxPagirYnbb
+Data:    49 bytes
+Hex:     00cf0287231aa14145ef067862dec6ed0948948d09f0b2a95dadd6d4da0310a71107000000000000000000000000000000
+
+{
+  "Fungible": {
+    "balance": "7",
+    "definition_id": "Public/Ew5dVK7jwmkqgUncKTVHwyF7TePPLHW6N9GbwzUdrUhn"
+  }
+}
+PASS: public pool create (block 20) and swap (block 21); 10000 A in, 18132 B out, 7 A protocol fee.
+Sequencer left running at http://127.0.0.1:3040 (PID 65671).

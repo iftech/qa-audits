@@ -1,0 +1,31 @@
+[2026-11-25T20:37:47Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:60912 conn_id=113
+[2m2026-11-25T20:37:47.756823Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.165304ms
+[2026-11-25T20:37:47Z INFO  sequencer_executor_actor::actor] Block with id 42 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:37:47Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:60926 conn_id=114
+[2026-11-25T20:37:49Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:37:49.495213Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.755336ms
+[2m2026-11-25T20:37:49.545409Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 5.337553ms
+[2m2026-11-25T20:37:49.627032Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.677416ms
+[2m2026-11-25T20:37:49.662571Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.419026ms
+[2m2026-11-25T20:37:49.730070Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.765306ms
+[2026-11-25T20:37:49Z INFO  sequencer_core] Validated transaction with hash 87b6b03ed233e77fa67de6a103540a79f48090ef3ec17be78c7928f601a9e125, including it in block
+[2m2026-11-25T20:37:49.806587Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 49.709342ms
+[2m2026-11-25T20:37:49.874587Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.65268ms
+[2m2026-11-25T20:37:49.942135Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.863258ms
+[2m2026-11-25T20:37:50.009057Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.913589ms
+[2026-11-25T20:37:50Z INFO  sequencer_core] Created block with 3 transactions in 0 seconds
+[2026-11-25T20:37:50Z INFO  sequencer_core] Publishing block 43 on pin 707d7d425c33a06a7dfc3c84282d8853f0802cdaeb3191975b0597a6b0c6a6a6
+[2m2026-11-25T20:37:50.078433Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.056919ms
+[2m2026-11-25T20:37:50.127800Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 5.153027ms
+[2m2026-11-25T20:37:50.208355Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 5.010189ms
+[2m2026-11-25T20:37:50.236716Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.976009ms
+[2m2026-11-25T20:37:50.303488Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.664342ms
+[2m2026-11-25T20:37:50.373584Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 45.718467ms
+[2m2026-11-25T20:37:50.440729Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.890749ms
+[2m2026-11-25T20:37:50.469645Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.077905ms
+[2m2026-11-25T20:37:50.536600Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 4.197395ms
+[2026-11-25T20:37:50Z INFO  sequencer_executor_actor::actor] Block with id 43 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:37:50Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:54796 conn_id=115
+[2026-11-25T20:37:51Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:37:51.499440Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 5.17845ms
+[2m2026-11-25T20:37:51.567771Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.831216ms

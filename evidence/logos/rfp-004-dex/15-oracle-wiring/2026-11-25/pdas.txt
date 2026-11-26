@@ -1,0 +1,9 @@
+config               Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ
+pool                 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm
+vault_a              DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1
+vault_b              6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG
+pool_definition_lp   CCMZhonCog58dHn26gnWcDi1chuuW64vG1cHTm7riXJq
+lp_lock_holding      56w1pRapypARY9U49v4S95NDLQruvMVA7fmCU9TWEdDL
+current_tick_account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg
+protocol_fee_a       WSVoBnDxteLAGJXsj2jWSDq9KeqpshWzvtTmRBETqeZ
+protocol_fee_b       VN2MU9qpVW9J3aThqkhfHRp1M1Bv9fA9PV7iE75wNSa

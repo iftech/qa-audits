@@ -1,0 +1,26 @@
+[2026-11-25T20:37:42Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:60878 conn_id=107
+[2026-11-25T20:37:42Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:60882 conn_id=108
+[2026-11-25T20:37:43Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:37:43.534577Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.58205ms
+
+thread '<unnamed>' panicked at src/bin/amm.rs:16:1:
+account validation failed: AccountAlreadyInitialized { account_index: 1 }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-11-25T20:37:43Z INFO  sequencer_core] Validated transaction with hash a2caf017d17845c174fb753de95badbacc9135a0c19e4f7662a6ab3d9d4227c1, including it in block
+[2m2026-11-25T20:37:43.653713Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 46.221175ms
+[2m2026-11-25T20:37:43.721625Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.910614ms
+[2m2026-11-25T20:37:43.789731Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.781821ms
+[2m2026-11-25T20:37:43.856506Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.832482ms
+[2026-11-25T20:37:43Z INFO  sequencer_core] Created block with 3 transactions in 0 seconds
+[2026-11-25T20:37:43Z INFO  sequencer_core] Publishing block 40 on pin 533641cc7e4dcccb1111dfb9ff14707835a5234adbfc559877cb240b671ad005
+[2m2026-11-25T20:37:43.926153Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.786266ms
+
+thread '<unnamed>' panicked at src/bin/amm.rs:16:1:
+account validation failed: AccountAlreadyInitialized { account_index: 1 }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2m2026-11-25T20:37:44.047671Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 45.52943ms
+[2m2026-11-25T20:37:44.114379Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.5696ms
+[2m2026-11-25T20:37:44.181890Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.696819ms
+[2m2026-11-25T20:37:44.247898Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.4927ms
+[2026-11-25T20:37:44Z INFO  sequencer_executor_actor::actor] Block with id 40 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:37:44Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:60886 conn_id=109

@@ -1,0 +1,28 @@
+📋 Instruction: publish_price
+
+Accounts:
+  📦 price_observations → 0x71ef03242a9db62da8b4d6efca4a7fff2558e30ec6d949d45c744f565927de60
+  📦 oracle_price_account → 0xc65ccc794efd78648b645b2ec35fe9f5873c4beb210e2958a05a562039daf838
+  📦 current_tick_account → 0xeb2e84df601d023947863ab652b1ddf9fd408ad7f834f1c50fb46487865b22c7
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  price_source_id = "6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm"
+  window_duration = 10240000
+
+🔧 Transaction:
+  program:    6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux
+  instruction index: 4
+  instruction: PublishPrice {
+    price_source_id: "6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm",
+    window_duration: 10240000,
+  }
+
+  Serialized instruction data (41 bytes, borsh):
+    0x0450aead089141ec4dc3ed57c0ff8926fc1cb8edd2864d0e43d2ef44e2b110888a00409c0000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 12f6706ec678ce16dfac681c611a83bf5ba2301079fe38d91fb43ae38f8e07bd
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

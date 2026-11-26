@@ -1,0 +1,26 @@
+📋 Instruction: create_oracle_price_account
+
+Accounts:
+  📦 config → 0xbc41d854765ba7d129327b496efefaf9fb14b3ce07567694c1bae74010ae32fb
+  📦 pool → 0x50aead089141ec4dc3ed57c0ff8926fc1cb8edd2864d0e43d2ef44e2b110888a
+  📦 oracle_price_account → 0xc65ccc794efd78648b645b2ec35fe9f5873c4beb210e2958a05a562039daf838
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  window_duration = 10240000
+
+🔧 Transaction:
+  program:    FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe
+  instruction index: 3
+  instruction: CreateOraclePriceAccount {
+    window_duration: 10240000,
+  }
+
+  Serialized instruction data (9 bytes, borsh):
+    0x0300409c0000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 87b6b03ed233e77fa67de6a103540a79f48090ef3ec17be78c7928f601a9e125
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

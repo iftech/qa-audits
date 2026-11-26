@@ -1,0 +1,215 @@
+Run directory: $HOME/work/rfp004-15.xeBmYp
+$ rustc +1.94.0 --version
+rustc 1.94.0 (4a4ef493e 2026-03-02)
+$ cargo +1.94.0 risczero --version
+cargo-risczero 3.0.5
+$ $HOME/.cargo/bin/r0vm --version
+risc0-r0vm 3.0.5
+$ $HOME/rfp004-repos/logos-execution-zone/target/release/sequencer_service --version
+sequencer_service 0.1.0
+$ $HOME/rfp004-repos/logos-execution-zone/target/release/wallet --version
+wallet 0.1.0
+Debug-genesis fee payer: 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV
+token ImageID: 057e9cc28c7bd70645f74fa2c38e9880e532d369bda31a4bbaa24f5f1e93a6bc
+token program header: J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr
+twap_oracle ImageID: 979279c5fa38173abf0d35370e2c481303ec28f959c7eeb98ab74a7e90ce3edd
+twap_oracle program header: 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux
+amm ImageID: a69de4104f829dadb356f05f46ea1d79fc819618f2ebedb341d5b2e041d8bd79
+amm program header: FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe
+stablecoin ImageID: 6a3546e0b132b359c99bd6f9a3f1038260052f1510d4859e27679dc95be31edb
+stablecoin program header: 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc
+protocol_parameters        5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4
+stability_fee_accumulator  7GwS5nHdFf7F9Vxwif7o5xyxRjU7QFMJPZ8XcTyZg9md
+redemption_price_state     6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL
+stablecoin_definition      2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM
+stablecoin_master_holding  2imhKD5th7Zro1DWRqbWjr881RA9YukCrbyX4ZLaLYCH
+position        4d46qY14fzWDpxhHcMymj13v585LSb46a1oRQLdKiZDk
+position_vault  HZVH4f8yyoTGxcoYiimszBaGDXJ8SHtRCrRysi3GmtAy
+config               Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ
+pool                 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm
+vault_a              DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1
+vault_b              6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG
+pool_definition_lp   CCMZhonCog58dHn26gnWcDi1chuuW64vG1cHTm7riXJq
+lp_lock_holding      56w1pRapypARY9U49v4S95NDLQruvMVA7fmCU9TWEdDL
+current_tick_account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg
+protocol_fee_a       WSVoBnDxteLAGJXsj2jWSDq9KeqpshWzvtTmRBETqeZ
+protocol_fee_b       VN2MU9qpVW9J3aThqkhfHRp1M1Bv9fA9PV7iE75wNSa
+config               Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ
+pool                 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm
+vault_a              6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG
+vault_b              DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1
+pool_definition_lp   CCMZhonCog58dHn26gnWcDi1chuuW64vG1cHTm7riXJq
+lp_lock_holding      56w1pRapypARY9U49v4S95NDLQruvMVA7fmCU9TWEdDL
+current_tick_account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg
+protocol_fee_a       VN2MU9qpVW9J3aThqkhfHRp1M1Bv9fA9PV7iE75wNSa
+protocol_fee_b       WSVoBnDxteLAGJXsj2jWSDq9KeqpshWzvtTmRBETqeZ
+CHECK	O1-pool-pda-order-independent	same-pool	same-pool	
+current_tick_account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg
+price_observations   8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5
+oracle_price_account EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf
+current_tick_account 4syHkUXzqaGtwfN4FGV1N11LS5EhordUFS4vjna7gSp9
+price_observations   fUFt98eXRTZQ2BAVy5JyptaVhWAG9kwWFhwi9kCfPJG
+oracle_price_account zgtcESxvRDdSYxw1ngBDPJ5fynFhjQgLEHbTMDk8eRB
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/token-idl.json --program J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-fungible-definition --name QA\ Collateral --total-supply 10000000 --mint-authority none --definition-target-account 7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb --holding-target-account 9ao6C7WYAWpkmPYAfCJ63iX9HVkntL2YTvc5drRXXn2a
+[coll-token] ACCEPTED in block 24 (tx 7ff7bbc1336df3f316f6d2375ade762dab94d20439f2c18dc0033d42352e6daf)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- initialize --owner G9d1fhkGMBJhkz3pDrQXXZv6jFF9Ngi86Km8K4cybXs4 --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --nonce 0000000000000000000000000000000000000000000000000000000000000000 --token-program-id J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr --twap-oracle-program-id 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --authority G9d1fhkGMBJhkz3pDrQXXZv6jFF9Ngi86Km8K4cybXs4 --swap-fee-bps 30 --protocol-fee-bps 2500
+[amm-init] ACCEPTED in block 26 (tx e94531c1a4d3568b94f0ad730b6cc6b8715f4ed942ce4193002839b31f504fc0)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- initialize-program --deployment-authority 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --stability-fee-accumulator 7GwS5nHdFf7F9Vxwif7o5xyxRjU7QFMJPZ8XcTyZg9md --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --stablecoin-definition 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM --stablecoin-master-holding 2imhKD5th7Zro1DWRqbWjr881RA9YukCrbyX4ZLaLYCH --collateral-definition 7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb --market-price-oracle EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --freeze-authority-account-id qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --initial-stability-fee-per-millisecond 1000000000001500000000000000 --initial-controller-proportional-gain 1000000000 --initial-controller-integral-gain 0 --initial-minimum-collateralization-ratio 1500000000000000000000000000 --minimum-milliseconds-between-rate-updates 1000 --maximum-oracle-price-age-milliseconds 60000 --initial-redemption-price 1000000000000000000000000000 --stablecoin-name QA\ Stable --initial-admin-account-id qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --minimum-debt-amount 10 --debt-ceiling 1000000000000 --market-price-oracle-program-id 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux
+[S1-init-with-absent-oracle] ACCEPTED in block 28 (tx 9f489f7404e20eff5dfa9a8d264a8fde592443683e8b0ac62494653a9ad68909)
+CHECK	S1-init-with-absent-oracle	accepted	accepted	
+[params] {"admin_account_id":"Public/qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz","collateral_definition_id":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","controller_integral_gain":"0","controller_proportional_gain":"1000000000","debt_ceiling":"1000000000000","freeze_authority_account_id":"Public/qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz","is_frozen":false,"market_price_oracle_id":"Public/EMKoA9
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/token-idl.json --program J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- initialize-account --definition-account 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM --account-to-initialize BRKNJsRJ8xFwENa5tAFxDCy4Yvjn4iC3sHBBdoGUgEVT
+[sc-hold-init] ACCEPTED in block 30 (tx cf6e672635b171d9c2c2a9c956d1691a2c0cefd1f0df54727923a33fab0c9eb4)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- open-position --owner xyUjiE9m2ZerbTWT9CRp7QWHxMCa6JL9mqkuwULVYUU --position 4d46qY14fzWDpxhHcMymj13v585LSb46a1oRQLdKiZDk --vault HZVH4f8yyoTGxcoYiimszBaGDXJ8SHtRCrRysi3GmtAy --user-collateral-holding 9ao6C7WYAWpkmPYAfCJ63iX9HVkntL2YTvc5drRXXn2a --collateral-definition 7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --position-nonce 0 --initial-collateral-amount 1000000
+[open-position] ACCEPTED in block 31 (tx 06137adfdfd487bb201ca6ff3db29e8e58c564d2b3bb6de23108184e3189993d)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- generate-debt --owner xyUjiE9m2ZerbTWT9CRp7QWHxMCa6JL9mqkuwULVYUU --position 4d46qY14fzWDpxhHcMymj13v585LSb46a1oRQLdKiZDk --stablecoin-definition 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM --user-stablecoin-holding BRKNJsRJ8xFwENa5tAFxDCy4Yvjn4iC3sHBBdoGUgEVT --stablecoin-master-holding 2imhKD5th7Zro1DWRqbWjr881RA9YukCrbyX4ZLaLYCH --stability-fee-accumulator 7GwS5nHdFf7F9Vxwif7o5xyxRjU7QFMJPZ8XcTyZg9md --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --amount 300000
+[generate-debt] ACCEPTED in block 33 (tx f46332081376864c4afe1bcadca2f72e561434825a4d9f80a5cb58750025f82d)
+[sc-hold] {"Fungible":{"balance":"300000","definition_id":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM"}}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- update-redemption-rate --caller qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --market-price-oracle EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU
+[F1-strict-read-absent-oracle] REJECTED by program: assertion `left != right` failed: Market price oracle account must be initialized (tx abcdbb952a43b4900b2c0bce5a599d4fa03985d5efe4d5c13f79795b017a27c4)
+CHECK	F1-strict-read-absent-oracle	rejected	rejected	assertion `left != right` failed: Market price oracle account must be initialized
+[redemption-0] {"controller_integral_term":"0","last_updated_at":"1795639037467","redemption_price_at_last_update":"1000000000000000000000000000","redemption_rate_per_millisecond":"1000000000000000000000000000"}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- refresh-globals --caller qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --stability-fee-accumulator 7GwS5nHdFf7F9Vxwif7o5xyxRjU7QFMJPZ8XcTyZg9md --stablecoin-definition 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM --stablecoin-master-holding 2imhKD5th7Zro1DWRqbWjr881RA9YukCrbyX4ZLaLYCH --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --market-price-oracle EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU
+[F2-soft-read-absent-oracle] ACCEPTED in block 36 (tx a7f29e39b1fca89b48d1d252de80ae659faa16ab7021521a9c3ea0e312a8302f)
+CHECK	F2-soft-read-absent-oracle	accepted	accepted	
+[redemption-1] {"controller_integral_term":"0","last_updated_at":"1795639037467","redemption_price_at_last_update":"1000000000000000000000000000","redemption_rate_per_millisecond":"1000000000000000000000000000"}
+CHECK	F2b-soft-read-leaves-redemption	unchanged	unchanged	
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-definition --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --vault-a DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1 --vault-b 6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG --pool-definition-lp CCMZhonCog58dHn26gnWcDi1chuuW64vG1cHTm7riXJq --lp-lock-holding 56w1pRapypARY9U49v4S95NDLQruvMVA7fmCU9TWEdDL --user-holding-a BRKNJsRJ8xFwENa5tAFxDCy4Yvjn4iC3sHBBdoGUgEVT --user-holding-b 9ao6C7WYAWpkmPYAfCJ63iX9HVkntL2YTvc5drRXXn2a --user-holding-lp A5fusjSHe9aGkQf766wavJQinoRhMJUqPYz1Etva8o3S --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --token-a-amount 100000 --token-b-amount 200000 --deadline 18446744073709551615
+[pool-create] ACCEPTED in block 38 (tx 11286476cdda4feb439f4c2438f647c28a044ca816e7cd5edb0643e47517d819)
+[pool-0] {"definition_token_a_id":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","definition_token_b_id":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","liquidity_pool_id":"Public/CCMZhonCog58dHn26gnWcDi1chuuW64vG1cHTm7riXJq","liquidity_pool_supply":"141421","reserve_a":"100000","reserve_b":"200000","vault_a_id":"Public/DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1","vault_b_id":"Public/6UGYMu
+[tick-0] {"last_updated":"1795639057466","tick":6931}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-definition --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --vault-a 6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG --vault-b DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1 --pool-definition-lp CCMZhonCog58dHn26gnWcDi1chuuW64vG1cHTm7riXJq --lp-lock-holding 56w1pRapypARY9U49v4S95NDLQruvMVA7fmCU9TWEdDL --user-holding-a 9ao6C7WYAWpkmPYAfCJ63iX9HVkntL2YTvc5drRXXn2a --user-holding-b BRKNJsRJ8xFwENa5tAFxDCy4Yvjn4iC3sHBBdoGUgEVT --user-holding-lp AoGCwywNhxynRXEBdANKZTMcwPd1C98wvnLBgsUrZSey --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --token-a-amount 200000 --token-b-amount 100000 --deadline 18446744073709551615
+[O2-reversed-pool-rejected] REJECTED by program: account validation failed: AccountAlreadyInitialized { account_index: 1 } (tx a2caf017d17845c174fb753de95badbacc9135a0c19e4f7662a6ab3d9d4227c1)
+CHECK	O2-reversed-pool-rejected	rejected	rejected	account validation failed: AccountAlreadyInitialized { account_index: 1 }
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- create-price-observations --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --price-observations 8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5 --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --window-duration 10240000
+[create-obs] ACCEPTED in block 41 (tx d968f433a864564d97b3205c2503b56d49b63d1a0f9980ee381a4c6112abb752)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- create-oracle-price-account --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --oracle-price-account EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --window-duration 10240000
+[create-oracle] ACCEPTED in block 43 (tx 87b6b03ed233e77fa67de6a103540a79f48090ef3ec17be78c7928f601a9e125)
+[oracle-0] {"base_asset":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","confidence_interval":"0","price":"36893488147419103232","quote_asset":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","source_id":"Public/6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm","timestamp":"1795639067467"}
+[obs-0] {"entries":[{"tick_cumulative":"0","timestamp":"1795639063466"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulativ
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- publish-price --price-observations 8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5 --oracle-price-account EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --window-duration 10240000
+[publish-1obs] ACCEPTED in block 45 (tx 3724024f0e4bfb98f442ff41e83ce0db3a747e8321dfd4568d3468f9a74d345f)
+CHECK	T1-publish-with-1-observation	accepted	accepted	
+[oracle-1] {"base_asset":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","confidence_interval":"0","price":"36893488147419103232","quote_asset":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","source_id":"Public/6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm","timestamp":"1795639067467"}
+CHECK	T1b-publish-1-obs-leaves-oracle	unchanged	unchanged	
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- update-redemption-rate --caller qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --market-price-oracle EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU
+[S2-strict-read-of-seed-spot-price] ACCEPTED in block 47 (tx 5d74d34fba8473d71a4d316f5b61df9535402424dff67281c1ea9db7d61d8fe2)
+CHECK	S2-strict-read-of-seed-spot-price	accepted	accepted	
+[redemption-2] {"controller_integral_term":"0","last_updated_at":"1795639075467","redemption_price_at_last_update":"1000000000000000000000000000","redemption_rate_per_millisecond":"999999999999999999000000000"}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- swap-exact-input --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --vault-a DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1 --vault-b 6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG --user-input-holding BRKNJsRJ8xFwENa5tAFxDCy4Yvjn4iC3sHBBdoGUgEVT --user-output-holding 9ao6C7WYAWpkmPYAfCJ63iX9HVkntL2YTvc5drRXXn2a --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --protocol-fee-holding WSVoBnDxteLAGJXsj2jWSDq9KeqpshWzvtTmRBETqeZ --swap-amount-in 10000 --min-amount-out 1 --deadline 18446744073709551615
+[swap-1] ACCEPTED in block 52 (tx af113571776883d01cb734a01730993553f81fa4b1a52ac08414a189ce5d5438)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- swap-exact-input --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --vault-a DnYg34rxaQU1zBeiukc2TnEkXHqaTAX5FrhGZ4HxFNj1 --vault-b 6UGYMuyy9NQyL1NVp9wfQsLWgtAJuAsFXceToAWCfmG --user-input-holding BRKNJsRJ8xFwENa5tAFxDCy4Yvjn4iC3sHBBdoGUgEVT --user-output-holding 9ao6C7WYAWpkmPYAfCJ63iX9HVkntL2YTvc5drRXXn2a --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --protocol-fee-holding WSVoBnDxteLAGJXsj2jWSDq9KeqpshWzvtTmRBETqeZ --swap-amount-in 10000 --min-amount-out 1 --deadline 18446744073709551615
+[swap-2] ACCEPTED in block 57 (tx 8149bc7678e5190b904f5eb842ded3aa04658e5daae28fca587ff214de2e4321)
+[tick-1] {"last_updated":"1795639095472","tick":3291}
+[obs-1] {"entries":[{"tick_cumulative":"0","timestamp":"1795639063466"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulativ
+[oracle-2] {"base_asset":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","confidence_interval":"0","price":"36893488147419103232","quote_asset":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","source_id":"Public/6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm","timestamp":"1795639067467"}
+CHECK	A1-swaps-move-current-tick	changed	changed	
+CHECK	A2-swaps-record-observation	changed	unchanged	
+CHECK	A3-swaps-publish-price	changed	unchanged	
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- record-tick --price-observations 8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5 --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --window-duration 10240000
+[record-1] ACCEPTED in block 59 (tx 0f627600d3181b4de9332d85f894ceb46c6b67b54976ac8196966b667c48ca16)
+CHECK	T2-record-tick	accepted	accepted	
+[obs-2] {"entries":[{"tick_cumulative":"0","timestamp":"1795639063466"},{"tick_cumulative":"118499037","timestamp":"1795639099473"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"
+CHECK	T2b-record-tick-adds-observation	changed	changed	
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- publish-price --price-observations 8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5 --oracle-price-account EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --window-duration 10240000
+[publish-2] ACCEPTED in block 61 (tx fce092cb9f695710d6241df7bb93149f5e1723af31b766924831f084394bbb80)
+CHECK	T3-publish-twap	accepted	accepted	
+[oracle-3] {"base_asset":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","confidence_interval":"0","price":"25635328714711932154","quote_asset":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","source_id":"Public/6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm","timestamp":"1795639103473"}
+CHECK	T3b-publish-updates-oracle	changed	changed	
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- update-redemption-rate --caller qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --market-price-oracle EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU
+[S3-strict-read-of-published-twap] ACCEPTED in block 64 (tx bd7d7209273b276e21cdf6fd3aec11b6be7271756476755da28f0ea8dfcb5c99)
+CHECK	S3-strict-read-of-published-twap	accepted	accepted	
+[redemption-3] {"controller_integral_term":"0","last_updated_at":"1795639109473","redemption_price_at_last_update":"999999999999965994000000000","redemption_rate_per_millisecond":"999999999999999999610306046"}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- publish-price --price-observations 8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5 --oracle-price-account EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --window-duration 10240000
+[publish-stale-tail] REJECTED by program: PublishPrice: observations are stale; call RecordTick before publishing (tx 12f6706ec678ce16dfac681c611a83bf5ba2301079fe38d91fb43ae38f8e07bd)
+CHECK	T4-publish-after-stale-tail	rejected	rejected	PublishPrice: observations are stale; call RecordTick before publishing
+[oracle-4] {"base_asset":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","confidence_interval":"0","price":"25635328714711932154","quote_asset":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","source_id":"Public/6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm","timestamp":"1795639103473"}
+[redemption-4] {"controller_integral_term":"0","last_updated_at":"1795639109473","redemption_price_at_last_update":"999999999999965994000000000","redemption_rate_per_millisecond":"999999999999999999610306046"}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- update-redemption-rate --caller qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --market-price-oracle EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU
+[F3-strict-read-stale-oracle] REJECTED by program: Market price oracle observation is stale (tx c83024d31496dd71650dd0e6739abdba00ab13c56d982d89e54ff9f5b1a51e74)
+CHECK	F3-strict-read-stale-oracle	rejected	rejected	Market price oracle observation is stale
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- refresh-globals --caller qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --stability-fee-accumulator 7GwS5nHdFf7F9Vxwif7o5xyxRjU7QFMJPZ8XcTyZg9md --stablecoin-definition 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM --stablecoin-master-holding 2imhKD5th7Zro1DWRqbWjr881RA9YukCrbyX4ZLaLYCH --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --market-price-oracle EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU
+[F4-soft-read-stale-oracle] ACCEPTED in block 95 (tx 2ed30ccef7d0fac837ac410f76dcacbffd4d4aea587a6b2222f379baea9666ea)
+CHECK	F4-soft-read-stale-oracle	accepted	accepted	
+[redemption-5] {"controller_integral_term":"0","last_updated_at":"1795639109473","redemption_price_at_last_update":"999999999999965994000000000","redemption_rate_per_millisecond":"999999999999999999610306046"}
+CHECK	F4b-soft-stale-leaves-redemption	unchanged	unchanged	
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- record-tick --price-observations 8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5 --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --window-duration 10240000
+[record-2] ACCEPTED in block 97 (tx 1caa03901cbb774a389670b20b01d20d87d8a80fd78c2f466c51f7e5e55fb2fd)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- publish-price --price-observations 8fkTJcQ324UfqkJfzG5YCPxTTHGS5E6woVGEUdQK8Vs5 --oracle-price-account EMKoA97yEuAZVB9QCL9sJSXLeCSSSezb9hYjRTZuswzf --current-tick-account Gq3x8xqTJ8BZ3QyD5DcF21iZufCxXd4tSB9gt3aviTHg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm --window-duration 10240000
+[publish-3] ACCEPTED in block 99 (tx e4980deee0c40d7fa10585dba02ffa90f0140271bd04b22ead94a0f868dc96a5)
+CHECK	T5-record-then-publish-recovers	accepted	accepted	
+[oracle-5] {"base_asset":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","confidence_interval":"0","price":"25635328714711932154","quote_asset":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","source_id":"Public/6Rx6ogPKwXcXyhERexER286zJpmprcZ6zBL7VH2Ahoxm","timestamp":"1795639179473"}
+[obs-3] {"entries":[{"tick_cumulative":"0","timestamp":"1795639063466"},{"tick_cumulative":"118499037","timestamp":"1795639099473"},{"tick_cumulative":"368618328","timestamp":"1795639175474"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulative":"0","timestamp":"0"},{"tick_cumulativ
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/token-idl.json --program J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-fungible-definition --name QA\ Zero\ A --total-supply 36893488147419103232 --mint-authority none --definition-target-account 6c8cKKnsJnpDgGucWfbHV5PE2nnQnEbL8M4Ho6mBLj7 --holding-target-account 7FqSPmP4hh2RYLU9NHZ5QpQuxMLAgy24kyJ5gsBD3nJZ
+[z-token-a] ACCEPTED in block 101 (tx 7d95cd7df4df1511078339134091cc7fcff87cfb8457df37083b65382ca9d771)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/token-idl.json --program J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-fungible-definition --name QA\ Zero\ B --total-supply 1000 --mint-authority none --definition-target-account 55TmMYxYR7HkTUvRLYvHU4a3rsxbgQHErDka6X31FaMA --holding-target-account H3V65KGfpVrzkpWCGAyjJz6YfsgF131EsXWoYMbJ4bT8
+[z-token-b] ACCEPTED in block 102 (tx 51292b28930516f3c119407caf9b6ada19e75362c7408f0ec2c040f1ca08b582)
+config               Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ
+pool                 9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX
+vault_a              2J5HeQeZLyBu9tuZb6eECLBKrgfXzGxVSUqQFokqsF7y
+vault_b              4AzDCF6HwUqPiVwJTtjN64f52TwMX2YaNz4oQ5V7Nw4F
+pool_definition_lp   TtNL8yvKrCZdrQhPmQ1vxtNncf4DFKTYvUVqaBQ9ukr
+lp_lock_holding      8oZRkhRiwivWZAJs6uVTo6H6UepL7JmkqwnV588QtCBV
+current_tick_account 394znMnbE6K8BQ3drdSKq1nEtmRzCu4RH8UH6RDADi6Y
+protocol_fee_a       oeBaKh8r9yHTtpRLMqxods2G7EkDY7pcXLwPNHgf9zU
+protocol_fee_b       KPYo34qKsZ1v3xnTNR4ca2BB6w31xzHMHNJSz1XntkJ
+current_tick_account 394znMnbE6K8BQ3drdSKq1nEtmRzCu4RH8UH6RDADi6Y
+price_observations   3LrkMWjPiEUdjAu6pWzEYXgakkSVbdo3hUr9jn61ykGg
+oracle_price_account 5G95WTTakY5dykXXX23SLWp4ZKZuPLi44GSWTo2NgC3N
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- new-definition --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX --vault-a 2J5HeQeZLyBu9tuZb6eECLBKrgfXzGxVSUqQFokqsF7y --vault-b 4AzDCF6HwUqPiVwJTtjN64f52TwMX2YaNz4oQ5V7Nw4F --pool-definition-lp TtNL8yvKrCZdrQhPmQ1vxtNncf4DFKTYvUVqaBQ9ukr --lp-lock-holding 8oZRkhRiwivWZAJs6uVTo6H6UepL7JmkqwnV588QtCBV --user-holding-a 7FqSPmP4hh2RYLU9NHZ5QpQuxMLAgy24kyJ5gsBD3nJZ --user-holding-b H3V65KGfpVrzkpWCGAyjJz6YfsgF131EsXWoYMbJ4bT8 --user-holding-lp 7oFSn8n22N3SfbwjJe9uip4KSpkkghdydojcXDwvLbwP --current-tick-account 394znMnbE6K8BQ3drdSKq1nEtmRzCu4RH8UH6RDADi6Y --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --token-a-amount 18446744073709551616 --token-b-amount 1 --deadline 18446744073709551615
+[z-pool] ACCEPTED in block 104 (tx f8e37cbd2270a938b2c0876fef759a5309116feb5f479428765770ecd0c5cfcc)
+[z-tick] {"last_updated":"1795639189474","tick":-443637}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- create-price-observations --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX --current-tick-account 394znMnbE6K8BQ3drdSKq1nEtmRzCu4RH8UH6RDADi6Y --price-observations 3LrkMWjPiEUdjAu6pWzEYXgakkSVbdo3hUr9jn61ykGg --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --window-duration 10240000
+[z-obs] ACCEPTED in block 106 (tx ec2f9ea01d3b82fdceb9c4a2bc03ad3de1df9a10ced201c1fa6ec7c4842f59d1)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/amm-idl.json --program FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- create-oracle-price-account --config Dfst6ENhfgEXtRWMzxsV3GSg8zSdyF2ChPcvbnNkm4tJ --pool 9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX --oracle-price-account 5G95WTTakY5dykXXX23SLWp4ZKZuPLi44GSWTo2NgC3N --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --window-duration 10240000
+[z-oracle] ACCEPTED in block 108 (tx d7cbb1682dd14ebfa445d04f5e846f3b83ab4b507e6eb4e8155c2003619d2dc0)
+[z-oracle-0] {"base_asset":"Public/6c8cKKnsJnpDgGucWfbHV5PE2nnQnEbL8M4Ho6mBLj7","confidence_interval":"0","price":"1","quote_asset":"Public/55TmMYxYR7HkTUvRLYvHU4a3rsxbgQHErDka6X31FaMA","source_id":"Public/9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX","timestamp":"1795639197473"}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- record-tick --price-observations 3LrkMWjPiEUdjAu6pWzEYXgakkSVbdo3hUr9jn61ykGg --current-tick-account 394znMnbE6K8BQ3drdSKq1nEtmRzCu4RH8UH6RDADi6Y --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX --window-duration 10240000
+[z-record] ACCEPTED in block 113 (tx 2e49e8e92ed8847ab3425df0b56ca7d7c4cccff338dd15271113e8ff22e7c574)
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- publish-price --price-observations 3LrkMWjPiEUdjAu6pWzEYXgakkSVbdo3hUr9jn61ykGg --oracle-price-account 5G95WTTakY5dykXXX23SLWp4ZKZuPLi44GSWTo2NgC3N --current-tick-account 394znMnbE6K8BQ3drdSKq1nEtmRzCu4RH8UH6RDADi6Y --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --price-source-id 9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX --window-duration 10240000
+[z-publish] ACCEPTED in block 115 (tx 2ec14079e965f3dfae7fa5d05024b29c5393ecf2e5906dd9a3b49ed6b9cf1705)
+CHECK	Z1-publish-zero-twap	rejected	accepted	
+[z-oracle-1] {"base_asset":"Public/6c8cKKnsJnpDgGucWfbHV5PE2nnQnEbL8M4Ho6mBLj7","confidence_interval":"0","price":"0","quote_asset":"Public/55TmMYxYR7HkTUvRLYvHU4a3rsxbgQHErDka6X31FaMA","source_id":"Public/9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX","timestamp":"1795639211473"}
+CHECK	Z1b-published-price	nonzero	0	
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- set-market-price-oracle --admin qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --new-oracle 5G95WTTakY5dykXXX23SLWp4ZKZuPLi44GSWTo2NgC3N --new-oracle-program-id 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux
+[bind-wrong-pair] REJECTED by program: assertion `left == right` failed: New oracle base_asset must equal the stablecoin definition's account_id (tx 8d2c29474704d8a2fdca438ccac0474ea5adb911d02bee2b740b3b1644398631)
+CHECK	P1-bind-wrong-pair	rejected	rejected	assertion `left == right` failed: New oracle base_asset must equal the stablecoin definition's account_id
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/twap_oracle-idl.json --program 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- create-oracle-price-account --oracle-price-account zgtcESxvRDdSYxw1ngBDPJ5fynFhjQgLEHbTMDk8eRB --price-source 3GPeqRendwa1a3KfyKxHmnkSbdjUmw5nTuNeEqdzgbFz --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU --base-asset 2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM --quote-asset 7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb --initial-price 9223372036854775808 --window-duration 10240000
+[rogue-oracle] ACCEPTED in block 118 (tx f673f9d785103343700ca5eaae1bdaf33f1ffd22c2efdde58ca9bb245e343af7)
+[rogue-oracle] {"base_asset":"Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM","confidence_interval":"0","price":"9223372036854775808","quote_asset":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","source_id":"Public/3GPeqRendwa1a3KfyKxHmnkSbdjUmw5nTuNeEqdzgbFz","timestamp":"1795639217474"}
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- set-market-price-oracle --admin qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --new-oracle zgtcESxvRDdSYxw1ngBDPJ5fynFhjQgLEHbTMDk8eRB --new-oracle-program-id 6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux
+[bind-wallet-sourced] ACCEPTED in block 120 (tx ad04bf8b72a3c8d276138f475f9bbfa4aef7d89f05874385311b8ff4253dde1a)
+CHECK	P2-bind-wallet-sourced-oracle	rejected	accepted	
+[params-rogue] {"admin_account_id":"Public/qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz","collateral_definition_id":"Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb","controller_integral_gain":"0","controller_proportional_gain":"1000000000","debt_ceiling":"1000000000000","freeze_authority_account_id":"Public/qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz","is_frozen":false,"market_price_oracle_id":"Public/zgtcES
+$ $HOME/rfp004-repos/spel/target/release/spel --idl artifacts/stablecoin-idl.json --program 8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc --fee-payer 6iArKUXxhUJqS7kCaPNhwMWt3ro71PDyBj7jwAyE2VQV -- update-redemption-rate --caller qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz --protocol-parameters 5PRVRJFSXTki5zpi8zFZx4bJAPr52aCntoLXQLXL5Sv4 --redemption-price-state 6xmFVSqFUmJPTHSKUKwuZ9B2RRjFEvvBSc3FojTsgDaL --market-price-oracle zgtcESxvRDdSYxw1ngBDPJ5fynFhjQgLEHbTMDk8eRB --clock 4BdcjoXkq786TMWcBGGHqcxeLYMZmn17rL4eM9ZyRWNU
+[P3-strict-read-wallet-sourced-price] ACCEPTED in block 122 (tx 8154c792654443db02dfac4bec157ce46768813f692614c329268b60d23a9de7)
+CHECK	P3-strict-read-wallet-sourced-price	rejected	accepted	
+[redemption-6] {"controller_integral_term":"0","last_updated_at":"1795639225473","redemption_price_at_last_update":"999999999999920789501336001","redemption_rate_per_millisecond":"1000000000000000000499999999"}
+Run directory: $HOME/work/rfp004-15.xeBmYp
+CHECK  O1-pool-pda-order-independent        same-pool  same-pool  
+CHECK  S1-init-with-absent-oracle           accepted   accepted   
+CHECK  F1-strict-read-absent-oracle         rejected   rejected   assertion `left != right` failed: Market price oracle account must be initialized
+CHECK  F2-soft-read-absent-oracle           accepted   accepted   
+CHECK  F2b-soft-read-leaves-redemption      unchanged  unchanged  
+CHECK  O2-reversed-pool-rejected            rejected   rejected   account validation failed: AccountAlreadyInitialized { account_index: 1 }
+CHECK  T1-publish-with-1-observation        accepted   accepted   
+CHECK  T1b-publish-1-obs-leaves-oracle      unchanged  unchanged  
+CHECK  S2-strict-read-of-seed-spot-price    accepted   accepted   
+CHECK  A1-swaps-move-current-tick           changed    changed    
+CHECK  A2-swaps-record-observation          changed    unchanged  
+CHECK  A3-swaps-publish-price               changed    unchanged  
+CHECK  T2-record-tick                       accepted   accepted   
+CHECK  T2b-record-tick-adds-observation     changed    changed    
+CHECK  T3-publish-twap                      accepted   accepted   
+CHECK  T3b-publish-updates-oracle           changed    changed    
+CHECK  S3-strict-read-of-published-twap     accepted   accepted   
+CHECK  T4-publish-after-stale-tail          rejected   rejected   PublishPrice: observations are stale; call RecordTick before publishing
+CHECK  F3-strict-read-stale-oracle          rejected   rejected   Market price oracle observation is stale
+CHECK  F4-soft-read-stale-oracle            accepted   accepted   
+CHECK  F4b-soft-stale-leaves-redemption     unchanged  unchanged  
+CHECK  T5-record-then-publish-recovers      accepted   accepted   
+CHECK  Z1-publish-zero-twap                 rejected   accepted   
+CHECK  Z1b-published-price                  nonzero    0          
+CHECK  P1-bind-wrong-pair                   rejected   rejected   assertion `left == right` failed: New oracle base_asset must equal the stablecoin definition's account_id
+CHECK  P2-bind-wallet-sourced-oracle        rejected   accepted   
+CHECK  P3-strict-read-wallet-sourced-price  rejected   accepted   

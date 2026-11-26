@@ -1,0 +1,3 @@
+current_tick_account 394znMnbE6K8BQ3drdSKq1nEtmRzCu4RH8UH6RDADi6Y
+price_observations   3LrkMWjPiEUdjAu6pWzEYXgakkSVbdo3hUr9jn61ykGg
+oracle_price_account 5G95WTTakY5dykXXX23SLWp4ZKZuPLi44GSWTo2NgC3N

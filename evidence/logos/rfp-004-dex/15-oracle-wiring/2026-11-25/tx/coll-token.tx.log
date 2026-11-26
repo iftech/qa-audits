@@ -1,0 +1,28 @@
+📋 Instruction: new_fungible_definition
+
+Accounts:
+  📦 definition_target_account → 0x6231ce8b8b0bee51278a98dd108b39112f28fb186c550dec42547aff1ad80ac6
+  📦 holding_target_account → 0x7f85c69354b56e95ac3460e70034e9a89bab9603cda7b5434b52835bd402417f
+
+Arguments (parsed):
+  name = "QA Collateral"
+  total_supply = 10000000
+  mint_authority = None
+
+🔧 Transaction:
+  program:    J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr
+  instruction index: 1
+  instruction: NewFungibleDefinition {
+    name: "QA Collateral",
+    total_supply: 10000000,
+    mint_authority: None,
+  }
+
+  Serialized instruction data (35 bytes, borsh):
+    0x010d000000514120436f6c6c61746572616c8096980000000000000000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 7ff7bbc1336df3f316f6d2375ade762dab94d20439f2c18dc0033d42352e6daf
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

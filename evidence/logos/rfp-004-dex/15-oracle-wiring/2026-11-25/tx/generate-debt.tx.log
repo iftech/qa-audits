@@ -1,0 +1,31 @@
+📋 Instruction: generate_debt
+
+Accounts:
+  📦 owner → 0x0e56cdfb816b52bc6191ac50a01b0eede8deee6e65aed53d50769d73e8871885
+  📦 position → 0x35cf79ce50d8c41d2b82a45df661f0063428528c5b19c8a5b68dde10b66ef1ab
+  📦 stablecoin_definition → 0x165c0ff296db696fc1c23bc7af21a4051b172572cf5f0de15e5ca6e5588ee9a8
+  📦 user_stablecoin_holding → 0x9acf93a5911aa60d0449e15e0fad54ae282e4972369fa40ac8c8de177645e9ee
+  📦 stablecoin_master_holding → 0x198f09770c9548451a9e59e7b784afe2f940c217cd41b26bc1f6a3c84d284a52
+  📦 stability_fee_accumulator → 0x5d3b61737639657b31950454721e644330821b9d9683cc571451a8fbfab2d254
+  📦 redemption_price_state → 0x5893699ec6a9af6ed5c298c18be180d46d8f522009d6b6888d814fc54fc18035
+  📦 protocol_parameters → 0x412d3766fe33eb5953ad427a60a02a285df55afa31f9b630d70500a4a2e15259
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  amount = 300000
+
+🔧 Transaction:
+  program:    8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc
+  instruction index: 6
+  instruction: GenerateDebt {
+    amount: 300000,
+  }
+
+  Serialized instruction data (17 bytes, borsh):
+    0x06e0930400000000000000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: f46332081376864c4afe1bcadca2f72e561434825a4d9f80a5cb58750025f82d
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

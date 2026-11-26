@@ -1,0 +1,27 @@
+📋 Instruction: record_tick
+
+Accounts:
+  📦 price_observations → 0x22cda8ac2495c77cf5d680131e41e3279a669df9704f4116b69b182efa777db9
+  📦 current_tick_account → 0x1fc889f4bca27112bcd21841637f332340c5638bac9c37778c9bc7a3838c2375
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  price_source_id = "9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX"
+  window_duration = 10240000
+
+🔧 Transaction:
+  program:    6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux
+  instruction index: 5
+  instruction: RecordTick {
+    price_source_id: "9U4oRvgddjrxZQHfwUR3FzPjp9CevRtt8mANeByzhHpX",
+    window_duration: 10240000,
+  }
+
+  Serialized instruction data (41 bytes, borsh):
+    0x057dcc797975106bd11fe4fe0b8d579a3fda12c12fb0c41d717b786584df26b0d400409c0000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 2e49e8e92ed8847ab3425df0b56ca7d7c4cccff338dd15271113e8ff22e7c574
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

@@ -1,0 +1,28 @@
+📋 Instruction: new_fungible_definition
+
+Accounts:
+  📦 definition_target_account → 0x016fa083790fa8191850a2cd0c9f65a4a77612427dd31f669adb619ccfc3fa26
+  📦 holding_target_account → 0x5cf3058cf7a18866a68518e3c80bf17dcdae8abb8e49f1d3c89b20d5498d749e
+
+Arguments (parsed):
+  name = "QA Zero A"
+  total_supply = 36893488147419103232
+  mint_authority = None
+
+🔧 Transaction:
+  program:    J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr
+  instruction index: 1
+  instruction: NewFungibleDefinition {
+    name: "QA Zero A",
+    total_supply: 36893488147419103232,
+    mint_authority: None,
+  }
+
+  Serialized instruction data (31 bytes, borsh):
+    0x01090000005141205a65726f20410000000000000000020000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 7d95cd7df4df1511078339134091cc7fcff87cfb8457df37083b65382ca9d771
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

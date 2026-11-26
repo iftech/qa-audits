@@ -1,0 +1,30 @@
+[2026-11-25T20:37:31Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:36098 conn_id=90
+[2026-11-25T20:37:31Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:36106 conn_id=91
+[2026-11-25T20:37:33Z INFO  sequencer_executor_actor::actor] Our turn: producing a block and any committee update
+[2m2026-11-25T20:37:33.536915Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.85938ms
+
+thread '<unnamed>' panicked at /src/programs/stablecoin/src/update_redemption_rate.rs:46:5:
+assertion `left != right` failed: Market price oracle account must be initialized
+  left: Account { program_owner: 11111111111111111111111111111111, balance: 0, data: Data([]), nonce: Nonce(0) }
+ right: Account { program_owner: 11111111111111111111111111111111, balance: 0, data: Data([]), nonce: Nonce(0) }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2026-11-25T20:37:33Z INFO  sequencer_core] Validated transaction with hash abcdbb952a43b4900b2c0bce5a599d4fa03985d5efe4d5c13f79795b017a27c4, including it in block
+[2m2026-11-25T20:37:33.660557Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 46.325822ms
+[2m2026-11-25T20:37:33.727687Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.66724ms
+[2m2026-11-25T20:37:33.794694Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.815075ms
+[2m2026-11-25T20:37:33.863204Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.945316ms
+[2026-11-25T20:37:33Z INFO  sequencer_core] Created block with 3 transactions in 0 seconds
+[2026-11-25T20:37:33Z INFO  sequencer_core] Publishing block 35 on pin 4d21451312d8d38fcdd5f951abc2fa25bb03258dbd81823fa7953c5239c5c800
+[2m2026-11-25T20:37:33.931440Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.483784ms
+
+thread '<unnamed>' panicked at /src/programs/stablecoin/src/update_redemption_rate.rs:46:5:
+assertion `left != right` failed: Market price oracle account must be initialized
+  left: Account { program_owner: 11111111111111111111111111111111, balance: 0, data: Data([]), nonce: Nonce(0) }
+ right: Account { program_owner: 11111111111111111111111111111111, balance: 0, data: Data([]), nonce: Nonce(0) }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+[2m2026-11-25T20:37:34.052535Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 45.65832ms
+[2m2026-11-25T20:37:34.079224Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.510251ms
+[2m2026-11-25T20:37:34.106076Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.869759ms
+[2m2026-11-25T20:37:34.131591Z[0m [32m INFO[0m [2mrisc0_zkvm::host::server::exec::executor[0m[2m:[0m execution time: 3.457904ms
+[2026-11-25T20:37:34Z INFO  sequencer_executor_actor::actor] Block with id 35 created by 01d25ad0a722d3fc3a10802a857acc9be587111c8a6613188fcdcdfaad58aaa7
+[2026-11-25T20:37:34Z INFO  jsonrpsee_server::server] connection; remote_addr=127.0.0.1:36120 conn_id=92

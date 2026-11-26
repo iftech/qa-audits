@@ -1,0 +1,31 @@
+📋 Instruction: create_oracle_price_account
+
+Accounts:
+  📦 oracle_price_account → 0x0ec735aaec485168b0ee1b72cd5a083bed31d67c46bfbea7934b2e8bc97a43f6
+  📦 price_source → 0x21a8b2f54f10af89a43501683df3f1c715eedcd107946d6d06fa8058d0f13cd5
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  base_asset = "2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM"
+  quote_asset = "7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb"
+  initial_price = 9223372036854775808
+  window_duration = 10240000
+
+🔧 Transaction:
+  program:    6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux
+  instruction index: 1
+  instruction: CreateOraclePriceAccount {
+    base_asset: "2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM",
+    quote_asset: "7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb",
+    initial_price: 9223372036854775808,
+    window_duration: 10240000,
+  }
+
+  Serialized instruction data (89 bytes, borsh):
+    0x01165c0ff296db696fc1c23bc7af21a4051b172572cf5f0de15e5ca6e5588ee9a86231ce8b8b0bee51278a98dd108b39112f28fb186c550dec42547aff1ad80ac60000000000000080000000000000000000409c0000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: f673f9d785103343700ca5eaae1bdaf33f1ffd22c2efdde58ca9bb245e343af7
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

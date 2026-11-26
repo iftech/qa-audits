@@ -1,0 +1,34 @@
+📋 Instruction: initialize
+
+Accounts:
+  📦 owner → 0xe114ab305607365b3414b83cc1f241deca059c247c16ec20a83b658921586dff
+  📦 config → 0xbc41d854765ba7d129327b496efefaf9fb14b3ce07567694c1bae74010ae32fb
+
+Arguments (parsed):
+  nonce = 0x0000000000000000000000000000000000000000000000000000000000000000
+  token_program_id = "J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr"
+  twap_oracle_program_id = "6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux"
+  authority = "G9d1fhkGMBJhkz3pDrQXXZv6jFF9Ngi86Km8K4cybXs4"
+  swap_fee_bps = 30
+  protocol_fee_bps = 2500
+
+🔧 Transaction:
+  program:    FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe
+  instruction index: 0
+  instruction: Initialize {
+    nonce: 0x0000000000000000000000000000000000000000000000000000000000000000,
+    token_program_id: "J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr",
+    twap_oracle_program_id: "6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux",
+    authority: "G9d1fhkGMBJhkz3pDrQXXZv6jFF9Ngi86Km8K4cybXs4",
+    swap_fee_bps: 30,
+    protocol_fee_bps: 2500,
+  }
+
+  Serialized instruction data (161 bytes, borsh):
+    0x000000000000000000000000000000000000000000000000000000000000000000fec30316ad3a4c170cfb932ed648e0960bde51a0e6f9a8821cbaa610305a4b4b50fa96a0afa23d7d15e17610efeaf29c1fbe4b4d63e5ab2020254f48d9052ffde114ab305607365b3414b83cc1f241deca059c247c16ec20a83b658921586dff1e000000000000000000000000000000c4090000000000000000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: e94531c1a4d3568b94f0ad730b6cc6b8715f4ed942ce4193002839b31f504fc0
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

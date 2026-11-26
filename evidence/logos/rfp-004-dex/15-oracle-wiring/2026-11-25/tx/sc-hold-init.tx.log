@@ -1,0 +1,22 @@
+📋 Instruction: initialize_account
+
+Accounts:
+  📦 definition_account → 0x165c0ff296db696fc1c23bc7af21a4051b172572cf5f0de15e5ca6e5588ee9a8
+  📦 account_to_initialize → 0x9acf93a5911aa60d0449e15e0fad54ae282e4972369fa40ac8c8de177645e9ee
+
+Arguments (parsed):
+
+🔧 Transaction:
+  program:    J9V2SjLuiUwb8J6Hh3fmAUEaiqvQgZtPJ4HaRDqtg4Gr
+  instruction index: 3
+  instruction: InitializeAccount {
+  }
+
+  Serialized instruction data (1 bytes, borsh):
+    0x03
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: cf6e672635b171d9c2c2a9c956d1691a2c0cefd1f0df54727923a33fab0c9eb4
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

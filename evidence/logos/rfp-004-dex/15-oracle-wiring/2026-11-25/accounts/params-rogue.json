@@ -1,0 +1,18 @@
+{
+  "admin_account_id": "Public/qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz",
+  "collateral_definition_id": "Public/7cK1Dit7QqY8Hv5wdRQboaQ4EVg1Hx8XXhhTt4c64kyb",
+  "controller_integral_gain": "0",
+  "controller_proportional_gain": "1000000000",
+  "debt_ceiling": "1000000000000",
+  "freeze_authority_account_id": "Public/qjcz5XP5ZVsp2orWVfT4Hv5ojR1fi4VmMGPF8aaoPjz",
+  "is_frozen": false,
+  "market_price_oracle_id": "Public/zgtcESxvRDdSYxw1ngBDPJ5fynFhjQgLEHbTMDk8eRB",
+  "market_price_oracle_program_id": "Public/6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux",
+  "maximum_oracle_price_age_milliseconds": "60000",
+  "minimum_collateralization_ratio": "1500000000000000000000000000",
+  "minimum_debt_amount": "10",
+  "minimum_milliseconds_between_rate_updates": "1000",
+  "schema_version": 2,
+  "stability_fee_per_millisecond": "1000000000001500000000000000",
+  "stablecoin_definition_id": "Public/2WHPbzPJ7RUbGNRURCXaEpMGAa1AyGZfxpGjuNE4B5TM"
+}

@@ -1,0 +1,35 @@
+📋 Instruction: swap_exact_input
+
+Accounts:
+  📦 config → 0xbc41d854765ba7d129327b496efefaf9fb14b3ce07567694c1bae74010ae32fb
+  📦 pool → 0x50aead089141ec4dc3ed57c0ff8926fc1cb8edd2864d0e43d2ef44e2b110888a
+  📦 vault_a → 0xbdf7313ca5eac9760b52b02207185e6e8e8f73206aebb0542989ebf05ea769d8
+  📦 vault_b → 0x0166bc6af337cea93adaf55a0bfaded44058fa4157dc9a6c1ae5e1c5cc690607
+  📦 user_input_holding → 0x9acf93a5911aa60d0449e15e0fad54ae282e4972369fa40ac8c8de177645e9ee
+  📦 user_output_holding → 0x7f85c69354b56e95ac3460e70034e9a89bab9603cda7b5434b52835bd402417f
+  📦 current_tick_account → 0xeb2e84df601d023947863ab652b1ddf9fd408ad7f834f1c50fb46487865b22c7
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+  📦 protocol_fee_holding → 0x078aac24a4d7766492619d46211e9986e2c32db7734e18e69e10e3878c1d0162
+
+Arguments (parsed):
+  swap_amount_in = 10000
+  min_amount_out = 1
+  deadline = 18446744073709551615
+
+🔧 Transaction:
+  program:    FGdpRf5J5Zvyrys5KJXssFfRHnF5xsiG6jcxBamQBWoe
+  instruction index: 7
+  instruction: SwapExactInput {
+    swap_amount_in: 10000,
+    min_amount_out: 1,
+    deadline: 18446744073709551615,
+  }
+
+  Serialized instruction data (41 bytes, borsh):
+    0x071027000000000000000000000000000001000000000000000000000000000000ffffffffffffffff
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 8149bc7678e5190b904f5eb842ded3aa04658e5daae28fca587ff214de2e4321
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

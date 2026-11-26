@@ -1,0 +1,31 @@
+📋 Instruction: open_position
+
+Accounts:
+  📦 owner → 0x0e56cdfb816b52bc6191ac50a01b0eede8deee6e65aed53d50769d73e8871885
+  📦 position → 0x35cf79ce50d8c41d2b82a45df661f0063428528c5b19c8a5b68dde10b66ef1ab
+  📦 vault → 0xf60d8cb00083ed8126b18104d1455bf9d519cf9a1f27686877a3a0a32fb73fbe
+  📦 user_collateral_holding → 0x7f85c69354b56e95ac3460e70034e9a89bab9603cda7b5434b52835bd402417f
+  📦 collateral_definition → 0x6231ce8b8b0bee51278a98dd108b39112f28fb186c550dec42547aff1ad80ac6
+  📦 protocol_parameters → 0x412d3766fe33eb5953ad427a60a02a285df55afa31f9b630d70500a4a2e15259
+  📦 clock → 0x2f4c455a2f436c6f636b50726f6772616d4163636f756e742f30303030303031
+
+Arguments (parsed):
+  position_nonce = 0
+  initial_collateral_amount = 1000000
+
+🔧 Transaction:
+  program:    8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc
+  instruction index: 4
+  instruction: OpenPosition {
+    position_nonce: 0,
+    initial_collateral_amount: 1000000,
+  }
+
+  Serialized instruction data (25 bytes, borsh):
+    0x04000000000000000040420f00000000000000000000000000
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 06137adfdfd487bb201ca6ff3db29e8e58c564d2b3bb6de23108184e3189993d
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.

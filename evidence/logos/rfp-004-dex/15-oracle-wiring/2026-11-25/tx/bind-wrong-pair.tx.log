@@ -1,0 +1,25 @@
+📋 Instruction: set_market_price_oracle
+
+Accounts:
+  📦 admin → 0x0c7c11e4841f4de153433676e22cce166c15c22252bfd5b5289f4375f7a14175
+  📦 protocol_parameters → 0x412d3766fe33eb5953ad427a60a02a285df55afa31f9b630d70500a4a2e15259
+  📦 new_oracle → 0x3f4f97e5d4f8ad144001e1dfda63223cb75d11605dde48d0df31d3f4c8c8109d
+
+Arguments (parsed):
+  new_oracle_program_id = "6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux"
+
+🔧 Transaction:
+  program:    8g5oD1hJSjHPJAmPfwG5Sue4evGtwNJWBJzZHQwCYaMc
+  instruction index: 10
+  instruction: SetMarketPriceOracle {
+    new_oracle_program_id: "6T7Empqipv3mBE5Qyk9R1xgfjCYdsi6pQzYWz5Tm21Ux",
+  }
+
+  Serialized instruction data (33 bytes, borsh):
+    0x0a50fa96a0afa23d7d15e17610efeaf29c1fbe4b4d63e5ab2020254f48d9052ffd
+
+📤 Submitting transaction...
+📤 Transaction submitted!
+   tx_hash: 8d2c29474704d8a2fdca438ccac0474ea5adb911d02bee2b740b3b1644398631
+   Waiting for confirmation...
+✅ Transaction confirmed — included in a block.
