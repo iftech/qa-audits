@@ -11,7 +11,7 @@
 
 **Status:** Final
 
-**Version:** Report v1, 2026-11-26. First version; replaces #9 as the current reference.
+**Version:** Report v1, 2026-11-26. Includes three follow-up runs at the same code revision. Replaces #9 as the current reference.
 
 ## Summary
 
@@ -19,7 +19,9 @@ QA checked [Request for Proposal 004][rfp], the privacy-preserving exchange, at 
 
 **Scope:** Rust tests, source checks, local-chain runs and live Basecamp journeys.
 
-**Not tested:** Public testnet or multi-sequencer load (runtime coverage was local); real proofs outside the [private-operation run][i13c]; reliability and oracle integration in the automated rerun (no reliability tests ran and the oracle tool version did not match). No fixes were checked. See [coverage limits](#coverage-limits).
+**Follow-up coverage:** [Four finding replays][e48-replays] ran against program or client code. [Oracle integration][e48-oracle] ran with matching RISC Zero 3.0.5 tools. [Local reliability tests][e48-reliability] ran for R.1–R.4. The result and finding statuses did not change.
+
+**Not tested:** Public testnet, multi-sequencer load, or fixes. Real proofs were limited to the [private-operation run][i13c] and two cases in the [oracle rerun][e48-oracle]. See [coverage limits](#coverage-limits).
 
 Earlier baseline: [#9][i9].
 
@@ -106,9 +108,11 @@ Fail if any High finding labelled Code bug is open; Pass with findings if only M
 |---|---:|
 | Live journey (Basecamp on a local chain) | 7 |
 | Runtime log (local-chain transactions) | 11 |
-| Bork proof test (runs program or client code) | 15 |
+| Oracle integration test | 3 |
+| Host replay (runs program or client code) | 2 |
+| Bork proof test (runs program or client code) | 13 |
 | Source only (Bork source check) | 6 |
-| Source only (other) | 8 |
+| Source only (other) | 5 |
 
 A Bork source check reads source code or docs. It does not run the program or client. Bork used direct tests or development mode, not real proving.
 
@@ -146,6 +150,7 @@ If a finding link does not open its group, expand the area below.
 
 - Code: [`update_config.rs:23-52`][c-upd], [`core/src/lib.rs:36-290`][c-core-ix].
 - Bork findings F-ff177004, F-8cdb0cf8, F-34241e3b, F-365f31bf: each Rust test calls the program and fails on its own assertion (exit 101).
+- The [R.4 reliability tests][e48-reliability] confirmed the fee-update gap: rotating the admin kept fees unchanged. There is no fee-update instruction, so the run could not test whether an update affects only later trades.
 - First reported as DEX-01 in [#9][i9].
 
 </details>
@@ -204,6 +209,7 @@ Keep DEX-04 as a code bug. Both swap modes accepted a foreign vault as the recip
 - Follow-up results from `RISC0_DEV_MODE=1 cargo test -p amm_program -- --nocapture`: exact-input/foreign input — accepted (error text: `none`); exact-input/foreign output — accepted (`none`); exact-output/foreign input — accepted (`none`); exact-output/foreign output — accepted (`none`). The assertion failures are the expected evidence that the requested rejection is missing.
 - The AMM checks the user holdings' Token Program ownership but does not reject a vault from another namespace ([`swap.rs:216–223`][c-swap-user], [`swap.rs:496–503`][c-swap-user-out]). Both modes use the supplied recipient in the chained output transfer ([`swap.rs:383–407`][c-swap-transfer-in], [`swap.rs:660–684`][c-swap-transfer-out]). The input-side result does not show that an unauthorized debit can succeed; the Token Program still checks sender authorization.
 - NS-03 in [#12][i12c] was a different case: it used exact-input A→B, but supplied namespace B's vault in the pool's `vault_b` account slot. `validate_swap_setup` rejected it at [`swap.rs:27-34`][c-swap-vaults] with `Vault B was not provided`, before the user holding slots were examined. It did not test a foreign recipient or input holding, so it does not contradict DEX-04.
+- The [R.2 reliability rerun][e48-reliability] checked the foreign-recipient gap in source only. Its passing namespace tests did not exercise that case.
 
 </details>
 
@@ -221,6 +227,7 @@ Swaps and liquidity changes update only the current tick. A price observation is
 <summary>Evidence</summary>
 
 - Runtime ([#15][i15] runtime check, [`checks.tsv`][e15c]): swaps changed the current tick but not the observation buffer or the published price (checks A1, A2, A3). After `RecordTick`, `PublishPrice` updated the price.
+- [Oracle integration][e48-oracle]: adding and removing liquidity also updated the tick without recording an observation or publishing a price.
 - Code: [`swap.rs:121-142`][c-swap-tick]. Bork F-f78733f5 (Rust test, exit 101).
 - [#9][i9] called this an outdated spec. RFP-019 F.1 says no off-chain keeper should be needed, so the spec owner must choose.
 
@@ -378,7 +385,7 @@ The programs accept private inputs: 36 tests passed in dev mode and with real pr
 <summary>Evidence</summary>
 
 - Runtime: [#13][i13c] QA13-01 (program passes) and QA13-02 (7 client cases blocked).
-- Code: [`amm_module_impl.cpp:371-391`][c-module]. Bork F-e236efc4 (source check), F-27e5eef0 (Rust test), F-4e6dc1bf (script written, not run).
+- Code: [`amm_module_impl.cpp:371-391`][c-module]. In the [host replay][e48-replays], the exchange module showed a fixture holding marked public and omitted the same holding when the fixture marked it private. The replay did not run the full app or a trade.
 
 </details>
 
@@ -575,6 +582,7 @@ For ticks below about −443,636, `PublishPrice` stores a price of 0. RFP-019 F.
 <summary>Evidence</summary>
 
 - Runtime ([#15][i15] runtime check, [`checks.tsv`][e15c]): checks Z1 (publish accepted) and Z1b (stored price 0).
+- The [oracle rerun][e48-oracle] did not cover this very-low-tick case. The local-chain result still stands.
 - Code: [`publish_price.rs:228-234`][c-publish]. Bork F-bee745cf (Rust test, exit 101).
 
 </details>
@@ -585,9 +593,9 @@ For ticks below about −443,636, `PublishPrice` stores a price of 0. RFP-019 F.
 
 | Severity | Status | Triage | Requirement | Evidence type | Links |
 |---|---|---|---|---|---|
-| High | Open | Code bug | RFP-019 F.1, F.3 | Bork proof test | [code][c-publish-win] |
+| High | Open | Code bug | RFP-019 F.1, F.3 | Oracle integration test | [code][c-publish-win], [rerun][e48-oracle] |
 
-`PublishPrice` averages from the oldest buffer entry instead of `window_duration`. When records are sparse, the window grows past the set length. Average over the configured window. Code: [`publish_price.rs:144-231`][c-publish-win]; Bork F-45037152 (unit level only).
+`PublishPrice` averages from the oldest buffer entry instead of `window_duration`. The integration test confirmed that the average included observations older than the configured window. Average over the configured window.
 
 <a id="dex-34"></a>
 
@@ -603,6 +611,7 @@ Creating the price account writes the current spot price with a fresh timestamp.
 <summary>Evidence</summary>
 
 - Runtime ([#15][i15] runtime check, [`checks.tsv`][e15c]): the AMM created the price account with a seed price that the stablecoin read.
+- [Oracle integration][e48-oracle] confirmed that the stablecoin accepts the initial spot price before the oracle has price history.
 - Code: [`create_oracle_price_account.rs:83-101`][c-create-opa]. Bork F-d7672a36.
 
 </details>
@@ -621,6 +630,7 @@ The TWAP oracle has no owner or source registry. In the runtime check, a wallet 
 <summary>Evidence</summary>
 
 - Runtime ([#15][i15] runtime check, [`checks.tsv`][e15c]): An admin selected the wallet-created account (P2). The stablecoin then read its price (P3).
+- The [oracle rerun][e48-oracle] did not test this path end to end. The local-chain result still stands.
 - Code: [`twap_oracle/core/src/lib.rs:28-172`][c-twap-core]. Bork F-5901978a.
 
 </details>
@@ -635,15 +645,17 @@ The TWAP oracle has no owner or source registry. In the runtime check, a wallet 
 
 There is no query that returns the TWAP with its observation times, and no `maxAge` parameter. Add it. Code: [`twap_oracle/core/src/lib.rs:28-172`][c-twap-core]; Bork F-2ef6b4a6.
 
+The [oracle rerun][e48-oracle] confirmed the missing query by reading source only.
+
 <a id="dex-37"></a>
 
 ### DEX-37: Record step credits a new tick with the whole gap
 
 | Severity | Status | Triage | Requirement | Evidence type | Links |
 |---|---|---|---|---|---|
-| Medium | Open | Code bug | RFP-019 F.1 | Bork proof test | [code][c-record] |
+| Medium | Open | Code bug | RFP-019 F.1 | Oracle integration test | [code][c-record], [rerun][e48-oracle] |
 
-`RecordTick` weights a just-written tick by the whole time since the last record and ignores `last_updated`. A tick that changed just before the record then counts for the full gap. Use the tick's own update time. Code: [`record_tick.rs:106-133`][c-record]; Bork F-b6248c66.
+`RecordTick` ignores `last_updated`. The integration test confirmed that the newest tick counted for the whole time since the last record. Use the tick's own update time.
 
 <a id="dex-38"></a>
 
@@ -653,7 +665,7 @@ There is no query that returns the TWAP with its observation times, and no `maxA
 |---|---|---|---|---|---|
 | Low | Open | Unclear spec | RFP-019 F.4 | Source only | [code][c-opa-type] |
 
-`OraclePriceAccount` is defined in `twap_oracle_core`, so the stablecoin depends on the TWAP crate. Decide whether F.4's "standard" account must live in a shared crate. Code: [`core/src/lib.rs:365-408`][c-opa-type]; Bork F-2458b0a6 (unconfirmed).
+`OraclePriceAccount` is defined in `twap_oracle_core`, so the stablecoin depends on the TWAP crate. The [oracle rerun][e48-oracle] confirmed this by reading source only. Decide whether F.4's "standard" account must live in a shared crate.
 
 <a id="dex-39"></a>
 
@@ -661,9 +673,9 @@ There is no query that returns the TWAP with its observation times, and no `maxA
 
 | Severity | Status | Triage | Requirement | Evidence type | Links |
 |---|---|---|---|---|---|
-| Low | Open | Unclear spec | RFP-019 F.4 | Source only | [code][c-amm-opa], [#15][i15], [files][e15] |
+| Low | Open | Unclear spec | RFP-019 F.4 | Oracle integration test | [code][c-amm-opa], [#15][i15], [rerun][e48-oracle] |
 
-The oracle takes token A as base because the pool was created that way. The spec wording on base and quote can be read both ways. Decide which token is base (decision 11). Code: [`create_oracle_price_account.rs:100-140`][c-amm-opa]; Bork F-d9e276ea; [#15][i15c].
+The [host replay][e48-replays] confirmed that pool token order sets the price direction. The oracle integration test also confirmed that the stablecoin accepts the expected order and rejects the reversed order rather than inverting the price. Decide which token is base (decision 11).
 
 <a id="dex-40"></a>
 
@@ -671,9 +683,9 @@ The oracle takes token A as base because the pool was created that way. The spec
 
 | Severity | Status | Triage | Requirement | Evidence type | Links |
 |---|---|---|---|---|---|
-| Low | Open | Unclear spec | RFP-013 F.8 | Source only | [code][c-clock] |
+| Low | Open | Unclear spec | RFP-013 F.8 | Host replay | [code][c-clock], [replay][e48-replays] |
 
-The stablecoin hardcodes `CLOCK_01_PROGRAM_ACCOUNT_ID`, while RFP-013 F.8 asks for a clock set per deployment. Confirm whether one fixed system clock is acceptable. Code: [`accrue_stability_fee.rs:162-173`][c-clock]; Bork F-7c35488b (unconfirmed).
+The stablecoin uses a fixed system clock, while RFP-013 F.8 asks for a clock set per deployment. The host replay accepted the fixed clock and rejected another clock address. The [oracle rerun][e48-oracle] confirmed the fixed address by reading source only. Confirm whether one fixed system clock is acceptable.
 
 <a id="dex-41"></a>
 
@@ -681,9 +693,9 @@ The stablecoin hardcodes `CLOCK_01_PROGRAM_ACCOUNT_ID`, while RFP-013 F.8 asks f
 
 | Severity | Status | Triage | Requirement | Evidence type | Links |
 |---|---|---|---|---|---|
-| Low | Open | Code bug | F.11 | Source only | [code][c-fee-tiers] |
+| Low | Open | Code bug | F.11 | Host replay | [code][c-fee-tiers], [replay][e48-replays] |
 
-The module and app still offer a fixed 1, 5, 30 and 100 basis-point list and describe it as enforced by the program. Fees are now set per namespace. Remove the list. Code: [`ffi/src/api/fee.rs:1-18`][c-fee-tiers]; Bork F-178c57ab (script written, not run).
+The host replay confirmed that the program accepts a fee outside the fixed list that the client API still advertises. Source checks traced the list to the app and found that the interface docs still describe it as enforced by the program. Remove the fixed list.
 
 </details>
 
@@ -769,10 +781,10 @@ A funded LP holding showed zero until the user switched away and back. After rem
 <summary>Limits</summary>
 
 - Bork used dev-mode or native tests, not real proving. At least 10 of its 35 replayed tests read source or docs text; they show something is missing in the source, not runtime behaviour.
-- Bork's oracle integration tests did not run because the test machine had `r0vm` 3.1.0 while the target pins `risc0-zkvm` 3.0.5. Oracle evidence from Bork is unit level only; the end-to-end oracle evidence is the #15 runtime check.
-- Bork's reliability task raised nothing and ran no tests. This is not a pass: an earlier run found two reliability problems in the same code.
-- Four Bork findings had no test run: F-4e6dc1bf and F-178c57ab (script not run), F-d9e276ea and F-7c35488b (source only).
-- All runtime checks used one local sequencer, not a public testnet.
+- The first oracle run had mismatched RISC Zero tools. The [follow-up][e48-oracle] used matching 3.0.5 tools and ran the integration suites. It did not retest DEX-32 or DEX-35 end to end; the [#15 runtime results][e15] still apply. Only two cases generated real proofs in the follow-up: adding liquidity and withdrawing collateral into private holdings.
+- The first automated run did not test reliability. The [follow-up][e48-reliability] ran ten local tests across R.1–R.4. R.1 checked sequential swaps and stale-quote rejection, not concurrent swaps. Stricter checks also passed for the exact treasury share (R.3) and token A fee accounting (R.4). These were local test assertions, not real proofs or a check of fee updates on later trades.
+- The [four replays][e48-replays] ran program or client code, not the full app or a private trade.
+- Tests on a running chain used one local sequencer. No public testnet or multi-sequencer load tests ran.
 - C20 in [#11][i11c] did not verify the exact-input deadline check. NS-01 in [#12][i12c] did not verify the protocol-fee address check.
 - Bork runs used Claude models to write and check findings; each finding was then matched by hand to the earlier reports.
 
@@ -801,12 +813,16 @@ A funded LP holding showed zero until the user switched away and back. After rem
 | [#13 Private and group authority](https://github.com/iftech/qa-audits/issues/13) | [2026-11-25](../../../evidence/logos/rfp-004-dex/13-private-group-authority/2026-11-25/) | Private operations and real-proof results |
 | [#14 Basecamp journeys](https://github.com/iftech/qa-audits/issues/14) | [2026-11-25](../../../evidence/logos/rfp-004-dex/14-live-basecamp/2026-11-25/) | Live client checks |
 | [#15 Cross-RFP oracle checks](https://github.com/iftech/qa-audits/issues/15) | [2026-11-25](../../../evidence/logos/rfp-004-dex/15-oracle-wiring/2026-11-25/) | Oracle and stablecoin results on the local chain |
+| [#48 Follow-up][i48-follow-up] | [Four finding replays][e48-replays] | Program and client checks for DEX-16, DEX-39, DEX-40 and DEX-41 |
+| [#48 Follow-up][i48-follow-up] | [Oracle integration][e48-oracle] | Matching RISC Zero tools, oracle and stablecoin tests, and two private proofs |
+| [#48 Follow-up][i48-follow-up] | [Reliability][e48-reliability] | Local tests for R.1–R.4 and stricter checks for the treasury share and fee accounting |
 
 <details>
 <summary>How to reproduce the runtime and live checks</summary>
 
 - **Runtime and live checks**: each issue has a folder under [`evidence/logos/rfp-004-dex/`][ev] ([#10][e10], [#11][e11], [#12][e12], [#13][e13], [#14][e14], [#15][e15]). Its `README.md` lists the pins, the script and how to rerun it. The [#10 folder][e10] explains how to build the pinned local chain.
 - **Oracle runtime check (#15)**: run `run-oracle-wiring.sh` from the [#15 folder][e15] with the #10 builds; [`checks.tsv`][e15c] lists each expected and observed result.
+- **Follow-up checks (#48):** the [replay][e48-replays], [oracle][e48-oracle] and [reliability][e48-reliability] folders record the tool versions, test results and commands for the tests available in the public repository.
 - **Automated audit (Bork):** The full patches, commands, environment and tool settings are in an internal QA workspace and are not public. The finding details link to public source and audit evidence where available.
 
 </details>
@@ -836,6 +852,10 @@ A funded LP holding showed zero until the user switched away and back. After rem
 [e14]: ../../../evidence/logos/rfp-004-dex/14-live-basecamp/2026-11-25
 [e15]: ../../../evidence/logos/rfp-004-dex/15-oracle-wiring/2026-11-25
 [e15c]: ../../../evidence/logos/rfp-004-dex/15-oracle-wiring/2026-11-25/checks.tsv
+[e48-replays]: ../../../evidence/logos/rfp-004-dex/48-follow-up/2026-11-26/
+[e48-oracle]: ../../../evidence/logos/rfp-004-dex/48-follow-up/2026-11-26-2/
+[e48-reliability]: ../../../evidence/logos/rfp-004-dex/48-follow-up/2026-11-26-3/
+[i48-follow-up]: https://github.com/iftech/qa-audits/issues/48#issuecomment-7196517760
 [ev]: ../../../evidence/logos/rfp-004-dex
 [i9]: https://github.com/iftech/qa-audits/issues/9
 [i10c]: https://github.com/iftech/qa-audits/issues/10#issuecomment-7167609314
