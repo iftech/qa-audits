@@ -1,0 +1,24 @@
+# Native Rust interface build
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.37s
+
+# Native exchange module
+Public fixture: one holding with balance 42
+Assertion failed (DEX-16): expected 1 private holding, got 0
+
+# Rust tests: expected failures and fee control
+test api::fee::tests::rfp004_dex41_fee_list_does_not_exclude_a_valid_namespace_fee ... FAILED
+test result: FAILED. 49 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test create_oracle_price_account::tests::rfp004_dex39_feed_keeps_stablecoin_base_when_pool_order_is_reversed ... FAILED
+test initialize::tests::rfp004_dex41_program_accepts_a_nonpreset_namespace_fee ... ok
+test result: FAILED. 150 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test accrue_stability_fee::tests::rfp004_dex40_accrual_can_use_a_clock_at_another_address ... FAILED
+test result: FAILED. 316 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+error: 3 targets failed:
+
+# Client source checks
+test_dex16_client_offers_private_swap_path (__main__.SourceChecks) ... FAIL
+test_dex41_client_does_not_describe_fixed_tiers_as_guest_enforced (__main__.SourceChecks) ... FAIL
+FAILED (failures=2)
+
+# Nix C++ suite did not start
+error: interrupted by the user

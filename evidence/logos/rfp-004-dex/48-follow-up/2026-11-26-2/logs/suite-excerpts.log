@@ -1,0 +1,47 @@
+# Guest compiler setup
+✓ Installed rust version 1.97.0
+✓ Installed cpp version 2024.1.5
+
+# Dev mode: full suites
+2026-11-26T14:47:55+00:00: RISC0_DEV_MODE=1 amm --skip oracle_rerun_
+running 56 tests
+test result: ok. 56 passed; 0 failed; 0 ignored; 0 measured; 3 filtered out; finished in 92.15s
+exit=0
+2026-11-26T14:49:27+00:00: RISC0_DEV_MODE=1 stablecoin ''
+running 30 tests
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 50.96s
+exit=0
+2026-11-26T14:50:18+00:00: RISC0_DEV_MODE=1 amm oracle_rerun_ --nocapture
+running 3 tests
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 56 filtered out; finished in 8.23s
+exit=0
+
+# Dev mode off: public execution then two private proof cases
+2026-11-26T14:50:27+00:00: RISC0_DEV_MODE=0 amm oracle_rerun_ --nocapture
+running 3 tests
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 56 filtered out; finished in 8.38s
+exit=0
+2026-11-26T14:50:35+00:00: RISC0_DEV_MODE=0 amm amm_twap_
+running 6 tests
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 53 filtered out; finished in 11.83s
+exit=0
+2026-11-26T14:50:47+00:00: RISC0_DEV_MODE=0 stablecoin stablecoin_refresh_globals_advances_both_then_fee_only_when_oracle_stale --exact
+running 1 test
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 29 filtered out; finished in 1.22s
+exit=0
+2026-11-26T14:50:48+00:00: RISC0_DEV_MODE=0 stablecoin stablecoin_future_oracle_rejects_strict_update_but_allows_fee_only_refresh --exact
+running 1 test
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 29 filtered out; finished in 1.08s
+exit=0
+2026-11-26T14:50:49+00:00: RISC0_DEV_MODE=0 stablecoin stablecoin_rejects_an_occupied_oracle_and_recovers_by_admin_rotation --exact
+running 1 test
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 29 filtered out; finished in 1.26s
+exit=0
+2026-11-26T14:50:50+00:00: RISC0_DEV_MODE=0 amm amm_add_liquidity_private_lp_holding --exact
+running 1 test
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 58 filtered out; finished in 324.21s
+exit=0
+2026-11-26T14:56:15+00:00: RISC0_DEV_MODE=0 stablecoin stablecoin_withdraw_collateral_private_destination --exact
+running 1 test
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 29 filtered out; finished in 221.60s
+exit=0

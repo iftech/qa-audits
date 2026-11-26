@@ -1,0 +1,8 @@
+# Mac audit scan transcript: final test result table (duplicate table omitted)
+| Req | Command | Result |
+|---|---|---|
+| R.1 | `cargo test --locked -p amm_program --test reliability_r1_concurrent_swaps` | exit 0, 2 passed |
+| R.2 | `cargo test --locked -p amm_program --test reliability_r2_namespace_isolation` | exit 0, 2 passed |
+| R.3 | `cargo test --locked -p amm_program --test reliability_r3_fee_split` | exit 0, 1 passed |
+| R.4 | `cargo test --locked -p amm_program --test reliability_r4_fee_updates` | exit 0, 5 passed |
+| Gate | `cargo test --locked -p amm_program --lib` | exit 0, 149 passed |
